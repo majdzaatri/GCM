@@ -1,0 +1,124 @@
+.transparent-background {
+  -fx-background-color: transparent;
+}
+
+.white-background {
+  -fx-background-color: whitesmoke;
+}
+
+.drawer-background {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0 15 15 0;
+}
+
+.sign-in-form-background {
+  -fx-background-color: linear-gradient(to top right, #262331, #4D3974, #3A5C81);
+  /*-fx-background-color: linear-gradient(to top right, #262331, #4D3974);*/
+  -fx-background-radius: 0 15 15 0;
+}
+
+.hbox-sign-in-form {
+  -fx-border-color: #B2B2B2;
+  -fx-border-width: 0px 0px 2px 0px;
+}
+
+.hbox-sign-in-form-focused {
+  -fx-border-color: #FF65B3;
+  -fx-border-width: 0px 0px 2px 0px;
+}
+
+.welcome-screen-main-background {
+  -fx-background-image: url("../images/GCMBackgroundMenuRoundedEdges.png");
+  -fx-background-radius: 15px;
+}
+
+.tile-leftmost-background {
+  -fx-background-radius: 60px;
+  -fx-background-color: linear-gradient(to top right, #4379A8 40%, #7D5EBF 100%, #4B3873);
+}
+
+.tile-middle-background {
+  -fx-background-radius: 60px;
+  -fx-background-color: linear-gradient(to top right, #4379A8, #7D5EBF 60%, #674A99);
+}
+
+.tile-rightmost-background {
+  -fx-background-radius: 60px;
+  -fx-background-color: linear-gradient(to top right, #4379A8, #7D5EBF 20%, #674A99 60%);
+}
+
+
+.switcheroo-top-pane {
+  -fx-background-image: url("../images/GCM/images/2/3/images/Untitled-1_02.jpg");
+  /*-fx-background-image: url("../images/GCM/images/Untitled-1_02.jpg");*/
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  /*-fx-border-width: 0 0 1 0;*/
+  /*-fx-border-color: #FF65B3;*/
+}
+
+.left-pane {
+  -fx-background-image: url("../images/GCM/images/2/3/images/Untitled-1_01.jpg");
+  /*-fx-background-image: url("../images/GCM/images/Untitled-1_01.jpg");*/
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right, top;
+}
+
+.switcheroo-pane {
+  -fx-background-image: url("../images/GCM/images/2/3/images/Untitled-1_03.jpg");
+  /*-fx-background-image: url("../images/GCM/images/Untitled-1_03.jpg");*/
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: bottom;
+  /*-fx-border-width: 0 0 0 1;*/
+  /*-fx-border-color: #FF65B3;*/
+  -fx-effect: innershadow(gaussian, #3c0e26, 8.71, 0.43, 0, 0);
+}
+
+.white-overlay-background {
+  -fx-background-color: linear-gradient(to top right, rgba(250, 250, 250, 0.1), rgba(245, 245, 245, 0.7));
+}
+
+
+.pink-dropshadow {
+  -fx-effect: dropshadow(gaussian, #FF65B3, 3, 0.1, 0, -0.2);
+}
+
+.notifications-title {
+  -fx-background-radius: 20 20 0 0px;
+  -fx-background-color: whitesmoke;
+}
+
+
+.notifications-vbox {
+  -fx-background-radius: 20 20 20 20;
+  -fx-background-color: whitesmoke;
+}
+
+/*notifications-bottom-pane*/
+
+
+/*.notifications-scroll-pane>*.viewport{*/
+/*!*-fx-border-width: 0 0 3 0;*!*/
+/*!*-fx-border-color: #68499A;*!*/
+/*!*-fx-background-radius: 20 20 0 0px;*!*/
+/*-fx-background-color: #BEDDFF;*/
+/*}*/
+
+.notification-hbox {
+  /*-fx-border-width: 1 0 1 0;*/
+  /*-fx-border-color: rgba(188, 218, 255, 1);*/
+  -fx-background-color: rgba(188, 218, 255, 0.3);
+}
+
+.notification-hbox:hover {
+  /*-fx-border-width: 0 0 1 0;*/
+  /*-fx-border-color: rgba(255, 101, 179, 1);*/
+  -fx-background-color: rgba(255, 101, 179, 0.2);
+}
+
+.notifications-scroll-pane {
+  -fx-border-width: 0;
+}

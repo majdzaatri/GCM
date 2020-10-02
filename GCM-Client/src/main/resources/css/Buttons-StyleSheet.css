@@ -1,0 +1,215 @@
+.jfx-button {
+    -fx-font-family: "Eras Demi ITC";
+    /*-fx-background-insets: 0, 1px ;*/
+    /*-fx-background-radius: 4px, 0 ;*/
+}
+
+.sign-in-button {
+    -fx-background-color: rgba(250, 101, 179, 0.5);
+    /*-fx-background-radius: 0 5 5 0;*/
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+    -fx-text-fill: rgba(245, 245, 245, 0.8);
+    -fx-font-size: 35px;
+}
+
+
+.sign-in-button:hover {
+    -fx-background-color: rgba(250, 101, 179, 0.9);
+    /*-fx-background-radius: 0 5 5 0;*/
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+    -fx-text-fill: rgba(245, 245, 245, 1);
+    -fx-font-size: 35px;
+}
+
+
+.forgot-password-button {
+    -fx-text-fill: #B2B2B2;
+    -fx-font-size: 16px;
+}
+
+.welcome-buttons {
+  -fx-background-color: rgba(250, 101, 179, 0.9);
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Bold ITC";
+}
+
+.city-catalog-buttons {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #cccccc;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;
+}
+
+
+.city-catalog-buttons:hover {
+  -fx-background-color: linear-gradient(to top right, rgba(250, 101, 179, 0.7), rgba(245, 245, 245, 0.2));
+  /*-fx-border-color: #cccccc;*/
+  /*-fx-border-width: 2px;*/
+  /*-fx-textToBeRendered-fill: whitesmoke;*/
+}
+
+.customer-map-view-back-button {
+  -fx-background-color: #7D5EBF;
+  -fx-background-radius: 30 30 0 0;
+  -fx-padding: 10;
+}
+
+.bell-icon {
+  -fx-effect: innershadow(gaussian, #3c0e26, 3, 0.8, 0, 0);
+}
+
+.bell-icon-armed {
+  -fx-effect: dropshadow(gaussian, #FF65B3, 30, 0.5, 0, 0);
+}
+
+
+.map-explorer-button-snapshot-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  /*-fx-background-color: linear-gradient(to top right, rgba(67, 121, 168, 0.2), rgba(67, 121, 168, 0.4), rgba(67, 121, 168, 0.8));*/
+  -fx-border-color: linear-gradient(to top right, rgba(125, 94, 191, 0.7), rgba(250, 101, 179, 0.7), rgba(245, 245, 245, 0.4));
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: linear-gradient(to top right, rgba(125, 94, 191, 0.7), rgba(250, 101, 179, 0.7), rgba(245, 245, 245, 0.4));;
+  -fx-font-size: 32;
+}
+
+.map-explorer-button-snapshot-button:hover {
+  -fx-background-color: linear-gradient(to top right, rgba(125, 94, 191, 0.7), rgba(250, 101, 179, 0.7), rgba(245, 245, 245, 0.2));
+  /*-fx-border-color: #cccccc;*/
+  /*-fx-border-width: 2px;*/
+  -fx-text-fill: whitesmoke;
+}
+
+
+.button-rainbow {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  /*-fx-background-color: linear-gradient(to top right, rgba(67, 121, 168, 0.2), rgba(67, 121, 168, 0.4), rgba(67, 121, 168, 0.8));*/
+  -fx-border-color: linear-gradient(to top right, rgba(125, 94, 191, 1), rgba(250, 101, 179, 1), rgba(245, 245, 245, 0.4));
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: linear-gradient(to top right, rgba(125, 94, 191, 1), rgba(250, 101, 179, 1), rgba(250, 101, 179, 0.7) 90%);
+  -fx-font-size: 32;
+}
+
+.button-rainbow:hover {
+  -fx-background-color: linear-gradient(to top right, rgba(125, 94, 191, 1), rgba(250, 101, 179, 1), rgba(250, 101, 179, 0.2));
+  -fx-text-fill: whitesmoke;
+}
+
+.button-purple {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: #7D5EBF;
+  -fx-opacity: 0.7;
+  /*-fx-border-style: segments(20,4);*/
+  /*-fx-stroke-dash-array: 12 2 4 2; -fx-stroke-width: 5;-fx-stroke: green;*/
+}
+
+.button-purple:hover {
+  /*-fx-background-color: #7D5EBF;*/
+  /*-fx-text-fill: whitesmoke;*/
+  -fx-opacity: 1;
+}
+
+
+.button-blue {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #4777AA;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: #4777AA;
+  -fx-opacity: 0.7;
+}
+
+.button-blue:hover {
+  -fx-opacity: 1;
+}
+
+
+.button-filled-purple {
+  -fx-font-family: "Eras Demi ITC";
+  -fx-background-color: #7D5EBF;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;
+}
+
+.button-filled-purple:hover {
+  -fx-background-color: #32CD32;
+  -fx-border-color: #32CD32;
+  /*-fx-text-fill: black;*/
+}
+
+.button-filled-blue {
+  -fx-font-family: "Eras Demi ITC";
+  -fx-background-color: #4777AA;
+  -fx-background-radius: 5px;
+  -fx-border-color: #4777AA;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;
+}
+
+.button-filled-blue:hover {
+  -fx-background-color: #32CD32;
+  -fx-border-color: #32CD32;
+  /*-fx-text-fill: black;*/
+}
+
+
+.button-filled-red {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #E32636;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: #E32636;
+}
+
+.button-filled-red:hover {
+  -fx-background-color: #E32636;
+  -fx-text-fill: whitesmoke;
+}
+
+
+.create-category-icon {
+  -fx-fill: #4777AA;
+}
+
+
+.button-map-editor-create-category:disabled {
+  -fx-opacity: 0.7;
+}
+
+.button-map-editor-create-category:disabled {
+
+}
+
+.button-map-editor-create-category:hover {
+  -fx-opacity: 1;
+  -fx-fill: #FF65B3;
+}
+
+
+
+
+
+/*.signIn-jfx-button {*/
+/*-fx-background-color: #ffa053;*/
+/*-fx-background-radius: 5px;*/
+/*-fx-textToBeRendered-fill: white;*/
+/*}*/

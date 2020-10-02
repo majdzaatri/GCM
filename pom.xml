@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>g6.gcm</groupId>
+  <artifactId>GCM-System</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  
+  <name>GCM-System</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-compiler-plugin</artifactId>
+				    <version>3.8.0</version>
+				    <configuration>
+				    <source>1.8</source>
+                	<target>1.8</target>
+                        <!--<release>1.8</release>  &lt;!&ndash;or <release>10</release>&ndash;&gt;-->
+				    </configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
+	<dependency>
+	    <groupId>com.jfoenix</groupId>
+	    <artifactId>jfoenix</artifactId>
+	    <version>8.0.8</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx-->
+	<dependency>
+	    <groupId>de.jensd</groupId>
+	    <artifactId>fontawesomefx</artifactId>
+	    <version>8.9</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+<dependency>
+    <groupId>org.controlsfx</groupId>
+    <artifactId>controlsfx</artifactId>
+    <version>8.40.15</version>
+</dependency>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx-commons
+<dependency>
+    <groupId>de.jensd</groupId>
+    <artifactId>fontawesomefx-commons</artifactId>
+    <version>9.1.2</version>
+    <scope>runtime</scope>
+</dependency>-->
+	
+	
+	<!--  
+	<dependency>
+	  <groupId>de.jensd</groupId>
+	  <artifactId>fontawesomefx-commons</artifactId>
+	  <version>11.0</version>
+	  <type>pom</type>
+	</dependency>
+	-->
+	
+	<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx-commons
+<dependency>
+    <groupId>de.jensd</groupId>
+    <artifactId>fontawesomefx-commons</artifactId>
+    <version>11.0</version>
+    <type>pom</type>
+    <scope>runtime</scope>
+</dependency>-->
+	
+	
+	
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.13</version>
+	</dependency>
+	
+	    
+  </dependencies>
+  
+	  <modules>
+		<module>GCM-Core</module>
+		<module>GCM-Client</module>
+		<module>GCM-Server</module>
+	  </modules>
+	  
+</project>

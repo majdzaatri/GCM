@@ -1,0 +1,135 @@
+.default-background {
+  -fx-background-color: #333333;
+  -fx-border-color: #99bce0;
+}
+
+.text-field-box {
+  -fx-background-color: transparent;
+  -fx-border-color: #99bce0;
+  -fx-border-width: 0px 0px 1px 0px;
+}
+
+
+.jfx-text-field {
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-text-fill: yellow;
+
+}
+
+/*.jfx-textToBeRendered-field .input-line {*/
+/*visibility: false;*/
+/*}*/
+/*.jfx-textToBeRendered-field .input-focused-line {*/
+/*visibility: false;*/
+/*}*/
+
+
+.jfx-combo-box {
+  -fx-background-color: transparent;
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+
+
+}
+
+.jfx-combo-box .text-field {
+  -fx-background-color: transparent;
+  -fx-prompt-text-fill: #B2B2B2;
+
+}
+
+.jfx-combo-box .input-line {
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+
+  visibility: false;
+}
+
+.jfx-combo-box .input-focused-line {
+  -fx-prompt-text-fill: #99bce0;
+  -fx-font-size: 16px;
+  visibility: false;
+}
+
+.jfx-combo-box .list-cell .text {
+  -fx-fill: white;
+  -fx-text-origin: bottom;
+  -fx-font-size: 16px;
+}
+
+.jfx-combo-box .list-cell {
+  -fx-fill: white;
+  -fx-font-size: 16px;
+
+  -fx-padding: 0.3em 0em 0em 0.1em;
+}
+
+/*top, right, bottom, and left*/
+
+.jfx-combo-box .combo-box-popup .list-cell {
+  -fx-background-color: #868686;
+  -fx-background-insets: 0;
+  -fx-padding: 0.4em 0.7em 0.4em 0.7em;
+}
+
+.jfx-combo-box .combo-box-popup .list-cell:hover {
+  -fx-background-color: #99bce0;
+  -fx-background-insets: 0;
+  -fx-padding: 0.4em 0.7em 0.4em 0.7em;
+}
+
+.jfx-combo-box .combo-box-popup .list-cell:hover .text {
+  -fx-fill: black;
+}
+
+.jfx-combo-box .combo-box-popup .list-view {
+  -fx-background-color: #99bce0;
+  -fx-background-insets: 0;
+}
+
+.jfx-combo-box .combo-box-popup .list-view:hover {
+  -fx-background-color: yellow;
+  -fx-background-insets: 0;
+}
+
+.jfx-combo-box .arrow {
+  -fx-background-color: #99bce0;
+}
+
+.mylabel {
+  -fx-text-fill: whitesmoke;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.my-yellow-label {
+  -fx-text-fill: yellow;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.doIt-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #cccccc;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;
+  -fx-font-size: 20px;
+  -fx-font-family: "Eras Demi ITC";
+
+}
+
+.close-button {
+
+}
+
+.jfx-progress-bar > .bar {
+  -fx-background-color: yellow;
+}
+
+.jfx-progress-bar > .track {
+  -fx-background-color: #333333;
+}

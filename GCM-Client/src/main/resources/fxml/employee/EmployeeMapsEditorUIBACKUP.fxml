@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1150.0"
+            styleClass="white-background" stylesheets="@../../css/General.css"
+            xmlns="http://javafx.com/javafx/8.0.172-ea"
+            fx:controller="g6.gcm.client.boundary.employee.EmployeeMapsEditorUIController" fx:id="mainViewAP">
+    <children>
+        <BorderPane prefHeight="100.0" prefWidth="1150.0" styleClass="top-pane">
+            <center>
+                <Label BorderPane.alignment="CENTER" styleClass="label-45" text="Map Editor"
+                       textFill="WHITE">
+                    <font>
+                        <Font name="Eras Demi ITC" size="45.0"/>
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="100.0" layoutX="10.0" layoutY="10.0" prefHeight="700.0"
+                    prefWidth="1150.0">
+            <children>
+                <MapView AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0" prefHeight="700.0" prefWidth="600.0" fx:id="mapView"/>
+                <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"
+                      prefHeight="700.0" prefWidth="550.0" styleClass="white-background">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </padding>
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <JFXComboBox labelFloat="true" maxWidth="175.0" promptText="Choose bean"
+                                             fx:id="citiesCB"/>
+                                <Region HBox.hgrow="ALWAYS"/>
+                                <JFXComboBox labelFloat="true" promptText="Choose a mapDTO" fx:id="mapCB"/>
+                            </children>
+                        </HBox>
+                        <Separator>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="30.0"/>
+                            </VBox.margin>
+                        </Separator>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Label styleClass="label-22" text="Site Editor:"/>
+                                <Region HBox.hgrow="ALWAYS"/>
+                                <JFXButton styleClass="purple-button-16" text="Create New Site"/>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <VBox spacing="20.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <Label text="Name:">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <JFXTextField/>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <Label text="Category:">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <JFXComboBox editable="true" prefHeight="28.0" prefWidth="141.0"/>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="40.0">
+                                    <children>
+                                        <Label text="Recommended visititing duration">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <JFXTextField maxWidth="50.0"/>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <JFXToggleButton contentDisplay="RIGHT" text="Accessible:">
+                                            <opaqueInsets>
+                                                <Insets/>
+                                            </opaqueInsets>
+                                            <HBox.margin>
+                                                <Insets left="-10.0" right="-15.0"/>
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Eras Demi ITC" size="16.0"/>
+                                            </font>
+                                        </JFXToggleButton>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="-10.0" top="-10.0"/>
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="108.0">
+                                    <children>
+                                        <Label text="X coordinates:">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <JFXTextField maxWidth="125.0"/>
+                                        <Region HBox.hgrow="ALWAYS"/>
+                                        <Label text="Y coordinates:">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                        <JFXTextField maxWidth="125.0"/>
+                                    </children>
+                                </HBox>
+                                <JFXTextArea labelFloat="true" maxHeight="30.0" promptText="Description:"
+                                             unFocusColor="BLACK">
+                                    <font>
+                                        <Font name="Eras Demi ITC" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="30.0"/>
+                                    </VBox.margin>
+                                </JFXTextArea>
+                            </children>
+                        </VBox>
+                        <Label styleClass="label-22" text="Tour Editor:">
+                            <VBox.margin>
+                                <Insets bottom="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Select bean:">
+                                    <HBox.margin>
+                                        <Insets right="10.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <JFXComboBox HBox.hgrow="ALWAYS" editable="true" prefHeight="34.0" prefWidth="305.0"
+                                             promptText="Type new name for new bean"/>
+                            </children>
+                        </HBox>
+                        <ListSelectionView>
+                            <VBox.margin>
+                                <Insets bottom="-10.0" left="-8.0" right="-8.0"/>
+                            </VBox.margin>
+                        </ListSelectionView>
+                        <HBox>
+                            <children>
+                                <JFXButton HBox.hgrow="ALWAYS" styleClass="purple-button" text="Save Map"/>
+                                <Region HBox.hgrow="ALWAYS"/>
+                                <JFXButton HBox.hgrow="ALWAYS" disable="true" layoutX="10.0" layoutY="10.0"
+                                           styleClass="purple-button" text="Request Release Approval"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

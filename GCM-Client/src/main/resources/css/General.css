@@ -1,0 +1,170 @@
+
+.white-background {
+  -fx-background-color: whitesmoke;
+}
+
+.top-pane {
+  -fx-background-image: url("../images/TopPane.png");
+}
+
+.transparent-background {
+  -fx-background-color: blue;
+}
+
+.rounded-background {
+  -fx-background-radius: 70px;
+  -fx-background-color: linear-gradient(to top right, #4379A8 40%, #7D5EBF 100%, #4B3873);
+}
+
+.rounded-background2 {
+  -fx-background-radius: 70px;
+  -fx-background-color: linear-gradient(to top right, #4379A8, #7D5EBF 60%, #674A99);
+}
+
+.rounded-background3 {
+  -fx-background-radius: 70px;
+  -fx-background-color: linear-gradient(to top right, #4379A8, #7D5EBF 20%, #674A99 80%);
+}
+
+.rounded-background .text {
+  -fx-text-fill: whitesmoke;
+}
+
+
+.label {
+  -fx-font-family: "Eras Demi ITC";
+    -fx-font-size: 16px;
+}
+
+
+.label-18 {
+  -fx-font-size: 18px;
+}
+
+.label-22 {
+  -fx-font-size: 22px;
+}
+
+.label-26 {
+  -fx-font-size: 26px;
+}
+
+.label-45 {
+  -fx-font-size: 45px;
+}
+
+.jfx-radio-button {
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.jfx-combo-box {
+  -fx-font-family: "Eras Demi ITC";
+    -fx-font-size: 16px;
+}
+
+.purple-button{
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 22px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5px;
+  -fx-border-width: 3px;
+  -fx-text-fill: #7D5EBF;
+}
+
+.purple-sided-button{
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 22px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5 0 0 5;
+  -fx-border-width: 3px;
+  -fx-text-fill: #7D5EBF;
+}
+
+
+.purple-sided-button-on-focused{
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 22px;
+  -fx-background-color: whitesmoke;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5 0 0 5;
+  -fx-border-width: 3 0 3 3;
+  -fx-text-fill: #7D5EBF;
+}
+
+
+.purple-button-16{
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: black;
+  -fx-border-radius: 5px;
+  -fx-border-width: 3px;
+  -fx-text-fill: black;
+}
+
+
+
+.jfx-button {
+  /*-fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 22px;
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #7D5EBF;
+  -fx-border-radius: 5px;
+  -fx-border-width: 3px;
+  -fx-textToBeRendered-fill: #7D5EBF;*/
+}
+
+
+.jfx-button:hover {
+}
+
+.jfx-button:focused {
+
+}
+
+.jfx-button .text {
+
+}
+
+
+.jfx-button .text:focused {
+
+}
+
+.jfx-button .text:hover {
+
+}
+
+
+
+
+.city-combo-box {
+  -fx-font-size: 22px;
+  -fx-text-alignment: center;
+  -fx-prompt-text-alignment: center;
+}
+
+.rounded_fade{
+    -fx-background-radius: 70px;
+    -fx-background-color: whitesmoke;
+}
+
+.rounded_fade .text{
+    -fx-fill: #5c7b9d;
+}
+
+.just_rounded_background{
+}
+
+.notification_content{
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #68499A;
+  -fx-background-radius: 70px;
+}

@@ -1,0 +1,120 @@
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1150.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="g6.gcm.client.boundary.startup.CatalogBrowserUIController">
+   <children>
+       <AnchorPane styleClass="white-overlay-background" AnchorPane.topAnchor="100.0">
+           <children>
+               <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true"
+                           prefHeight="550.0" prefWidth="1150.0" styleClass="pink-dropshadow" vbarPolicy="ALWAYS"
+                           AnchorPane.topAnchor="150.0">
+                   <stylesheets>
+                       <URL value="@../css/BackGrounds-StyleSheet.css"/>
+                       <URL value="@../css/Buttons-StyleSheet.css"/>
+                       <URL value="@../css/Labels-StyleSheet.css"/>
+                       <URL value="@../css/TextFields-StyleSheet.css"/>
+                   </stylesheets>
+                   <content>
+                       <TilePane fx:id="citiesTP" alignment="CENTER" hgap="30.0" maxHeight="500.0" prefColumns="3"
+                                 prefRows="0" prefTileHeight="500.0" prefTileWidth="340.0" vgap="30.0">
+                           <padding>
+                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                           </padding>
+                       </TilePane>
+                   </content>
+               </ScrollPane>
+               <HBox alignment="CENTER_LEFT" maxHeight="152.0" prefHeight="152.0" prefWidth="1150.0"
+                     AnchorPane.topAnchor="0.0">
+                   <children>
+                       <VBox maxWidth="555.0" prefWidth="530.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                               <HBox alignment="CENTER_LEFT">
+                                   <children>
+                                       <JFXComboBox fx:id="searchoptionsCB" prefHeight="31.0" prefWidth="153.0"
+                                                    promptText="Search By:"/>
+                                       <CustomTextField fx:id="searchTF" prefHeight="33.0" prefWidth="239.0"
+                                                        styleClass="sign" HBox.hgrow="NEVER">
+                                           <HBox.margin>
+                                               <Insets left="50.0"/>
+                                           </HBox.margin>
+                                       </CustomTextField>
+                                   </children>
+                                   <opaqueInsets>
+                                       <Insets right="50.0" top="1.0"/>
+                                   </opaqueInsets>
+                               </HBox>
+                           </children>
+                       </VBox>
+                       <Region maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+                       <Label styleClass="label-16" text="Sort By:">
+                           <HBox.margin>
+                               <Insets right="10.0"/>
+                           </HBox.margin>
+                       </Label>
+                       <JFXComboBox fx:id="sortingCB" labelFloat="true" promptText="select a category"
+                                    HBox.hgrow="NEVER"/>
+                   </children>
+                   <padding>
+                       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                   </padding>
+               </HBox>
+               <Separator prefWidth="1150.0" AnchorPane.topAnchor="150.0"/>
+               <Label fx:id="searchActivitatedLBL" prefHeight="33.0" prefWidth="254.0" AnchorPane.bottomAnchor="638.0"
+                      AnchorPane.rightAnchor="412.0"/>
+           </children>
+       </AnchorPane>
+       <JFXDrawer fx:id="catalogDRAWER" defaultDrawerSize="1150.0" direction="BOTTOM" disable="true" prefHeight="700.0"
+                  prefWidth="1150.0" styleClass="transparent-background" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.topAnchor="100.0"/>
+       <JFXButton fx:id="closeBTN" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="1097.0" layoutY="330.0"
+                  styleClass="customer-map-view-back-button" text="backBTN" visible="false"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="550.0">
+           <padding>
+               <Insets left="2.0" right="2.0"/>
+           </padding>
+           <graphic>
+               <FontAwesomeIconView fill="WHITESMOKE" glyphName="ARROW_CIRCLE_DOWN" size="50">
+                   <effect>
+                       <DropShadow color="#4379a8" height="9.0" offsetY="2.0" radius="3.25" width="6.0"/>
+                   </effect>
+               </FontAwesomeIconView>
+           </graphic>
+       </JFXButton>
+       <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="1150.0"
+             styleClass="switcheroo-top-pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+             AnchorPane.topAnchor="0.0">
+           <children>
+               <Label fx:id="topPaneLBL" styleClass="label-45" text="GCM Catalog" textFill="WHITE">
+                   <font>
+                       <Font name="Eras Demi ITC" size="45.0"/>
+                   </font>
+               </Label>
+           </children>
+       </HBox>
+   </children>
+    <stylesheets>
+        <URL value="@../css/BackGrounds-StyleSheet.css"/>
+        <URL value="@../css/Buttons-StyleSheet.css"/>
+        <URL value="@../css/TextFields-StyleSheet.css"/>
+        <URL value="@../css/Labels-StyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

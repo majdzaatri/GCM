@@ -1,0 +1,202 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.pane{
+	-fx-background-color: transparent;
+}
+
+.left-menu{
+	/*-fx-background-color: #754CC9 #3B2F53;*/
+		-fx-background-color:  #765FAD;
+}
+
+.red-pane{
+	-fx-background-color:  red;
+}
+
+.green-pane{
+	-fx-background-color:  green;
+}
+
+.jfx-button{
+	/*-fx-background-color: rgba(250, 250, 250, 0.2);*/
+	-fx-background-color: #765FAD;
+	-fx-alignment: center;
+	-fx-text-fill: whitesmoke;
+	-fx-font-family: "Eras Bold ITC";
+    -fx-font-size: 20 px;
+}
+
+.jfx-button:hover {
+	/*-fx-background-color: rgba(250, 250, 250, 0.5);*/
+	/*-fx-background-color:#7C60C7 #6C63EF;*/
+	-fx-background-color: #5F75DE;
+	-fx-effect: innershadow(gaussian, #342851, 14.5, 0, 0, 0);
+}
+
+.jfx-button:focused {
+	-fx-background-color: #5F75DE;
+	-fx-effect: innershadow(gaussian, #342851, 14.5, 0, 0, 0);
+}
+
+.jfx-blue-button{
+	-fx-background-color: #5F75DE;
+}
+
+
+.jfx-focused{
+	-fx-background-color: #5F75DE;
+	-fx-effect: innershadow(gaussian, #342851, 14.5, 0, 0, 0);
+}
+
+
+.jfx-blue-button:focused {
+	-fx-background-color: #E23182; /*pink focus*/
+	-fx-effect: innershadow(gaussian, #342851, 18, 0, 0, 0);
+}
+
+
+.jfx-blue-button:hover{
+	-fx-background-color: #E23182; /*pink hover*/
+	-fx-effect: innershadow(gaussian, #342851, 18, 0, 0, 0);
+}
+
+
+
+/********************************************************/
+
+.record-sales {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.record-sales:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+.record-sales:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.record-sales Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test-button{
+	 -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #765FAD 0%, #4B3C6E 100%),
+        #655194,
+        #AB89FA,
+        radial-gradient(center 50% 50%, radius 100%, #D07CFF, #8168BD);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em; 
+}
+
+
+.test-button:hover{
+	-fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #765FAD 0%, #4B3C6E 100%),
+        #655194,
+        #AB89FA,
+        radial-gradient(center 50% 50%, radius 100%, #D07CFF, #8168BD);
+}
+
+.test-button2:hover{
+	-fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,  #474D90 0%, #272A4F 100%),
+        #393E75,
+        #6B75DB,
+        radial-gradient(center 50% 50%, radius 100%, #6B7AED,#4C539C);
+}
+
+
+.test-button2{
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,  #6472E0 0%, #4853A1 100%),
+        #5A66C7,
+        #6B7AED,
+        radial-gradient(center 50% 50%, radius 100%, #4C76EF,#6573E0);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em; 
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.service-buttons{
+    -fx-font-size: 15 px;
+}
+
+.menu-blat{
+	-fx-background-color: transparent;
+
+  -fx-background-image: url("images/MenuBackGround.png");
+  /*-fx-background-position: center;*/
+  -fx-background-size: stretch;
+}
+
+.logo-background{
+	-fx-background-color: rgba(250, 250, 250, 0.8);
+}
+
+.welcome{
+    -fx-effect: innershadow( gaussian, black, 3, 0, -6, 0);
+}
+
+.main-scene-background{
+	-fx-background-color: whitesmoke;
+  -fx-background-image: url("/images/mapBackground.png");
+}
+
+
+
+
+

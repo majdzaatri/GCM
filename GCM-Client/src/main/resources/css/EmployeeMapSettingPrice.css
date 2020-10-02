@@ -1,0 +1,28 @@
+ .price .text{
+	-fx-fill: white;
+	-fx-font-size: 20;
+}
+
+ .price30 .text{
+	-fx-fill: White;
+	-fx-font-size: 30;
+}
+
+.jfx-text-field{
+	-fx-prompt-text-fill: black;
+}
+
+.update-price-background{
+	-fx-background-color: linear-gradient(to top right, #A9C2D7, #A39CD3 80%);
+	-fx-background-radius: 15;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 10,0,5,10 );
+}
+
+.update-price30-black .text{
+	-fx-fill: linear-gradient(to top right, #262331 5%, #4D3974);
+	-fx-font-size: 30;
+}
+.update-price20-black .text{
+	-fx-fill: linear-gradient(to top right, #262331 5%, #4D3974);
+	-fx-font-size: 20;
+}

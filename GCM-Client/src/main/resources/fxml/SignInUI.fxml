@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="signInVB" alignment="CENTER_LEFT" maxHeight="-Infinity"
+      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="440.0"
+      styleClass="sign-in-form-background" xmlns="http://javafx.com/javafx/8.0.171"
+      fx:controller="g6.gcm.client.boundary.startup.SignInUIController">
+   <children>
+     <Label maxHeight="-Infinity" maxWidth="-Infinity" text="Sign In">
+       <VBox.margin>
+           <Insets/>
+       </VBox.margin>
+       <styleClass>
+           <String fx:value="label-45"/>
+           <String fx:value="colored-label-white"/>
+       </styleClass>
+      </Label>
+       <Region layoutX="40.0" layoutY="370.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0"/>
+       <HBox fx:id="emailHB" alignment="CENTER_LEFT" styleClass="hbox-sign-in-form">
+         <children>
+             <JFXTextField fx:id="emailTF" focusColor="#fa65b3" labelFloat="true" maxHeight="1.7976931348623157E308"
+                           maxWidth="1.7976931348623157E308" promptText="Email" unFocusColor="#a6a6a6"
+                           HBox.hgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value="transparent" />
+                   <String fx:value="text-field-size-20"/>
+                   <String fx:value="jfx-text-field-white-text"/>
+               </styleClass>
+            </JFXTextField>
+            <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@../images/icons8-new-post-64.png" />
+               </image>
+               <HBox.margin>
+                   <Insets/>
+               </HBox.margin>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+              <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.84" specularExponent="17.11" surfaceScale="2.95">
+                  <bumpInput>
+                      <Shadow/>
+                  </bumpInput>
+                  <light>
+                      <Light.Distant/>
+                  </light>
+                </Lighting>
+              </effect>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+       <Region maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+               prefHeight="60.0"/>
+       <HBox fx:id="passwordHB" alignment="CENTER_LEFT" styleClass="hbox-sign-in-form">
+         <children>
+             <JFXPasswordField fx:id="passwordTF" focusColor="#fa65b3" labelFloat="true"
+                               maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                               promptText="Password" unFocusColor="#a6a6a6" HBox.hgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value="transparent" />
+                   <String fx:value="text-field-size-20"/>
+                   <String fx:value="jfx-text-field-white-text"/>
+               </styleClass>
+            </JFXPasswordField>
+            <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-password-64.png" />
+               </image>
+               <HBox.margin>
+                   <Insets/>
+               </HBox.margin>
+              <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.84" specularExponent="17.11" surfaceScale="2.95">
+                  <bumpInput>
+                      <Shadow/>
+                  </bumpInput>
+                  <light>
+                      <Light.Distant/>
+                  </light>
+                </Lighting>
+              </effect>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+       <Region layoutX="40.0" layoutY="305.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0"/>
+       <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity">
+         <children>
+             <Region maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS"/>
+             <JFXButton fx:id="forgotPasswordBTN" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="40.0"
+                        ripplerFill="TRANSPARENT" styleClass="forgot-password-button" text="Forgot Password?"
+                        textAlignment="CENTER" textFill="#757575" HBox.hgrow="ALWAYS">
+             <font>
+                 <Font size="16.0"/>
+             </font>
+               <HBox.margin>
+                   <Insets/>
+               </HBox.margin>
+             <padding>
+                 <Insets right="-0.1"/>
+             </padding>
+            </JFXButton>
+         </children>
+     </HBox>
+       <Region layoutX="40.0" layoutY="336.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0"/>
+       <HBox alignment="CENTER_RIGHT" layoutX="40.0" layoutY="429.0" maxHeight="-Infinity"
+             maxWidth="1.7976931348623157E308" minHeight="-Infinity">
+       <children>
+           <JFXButton fx:id="signInBTN" maxWidth="1.7976931348623157E308" prefHeight="80.0" ripplerFill="#9bc7fa"
+                      styleClass="sign-in-button" text="Sign In" HBox.hgrow="ALWAYS">
+           <font>
+               <Font name="System Bold" size="16.0"/>
+           </font>
+         </JFXButton>
+       </children>
+      </HBox>
+   </children>
+  <stylesheets>
+      <URL value="@../css/Labels-StyleSheet.css"/>
+      <URL value="@../css/BackGrounds-StyleSheet.css"/>
+      <URL value="@../css/TextFields-StyleSheet.css"/>
+      <URL value="@../css/Buttons-StyleSheet.css"/>
+  </stylesheets>
+   <padding>
+       <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+   </padding>
+</VBox>

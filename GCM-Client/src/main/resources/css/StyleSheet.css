@@ -1,0 +1,29 @@
+
+.white-background {
+  -fx-background-color: whitesmoke;
+}
+.root{
+		 -fx-background-color: transparent;
+}
+
+
+.pane {
+  -fx-background-color: #333333;
+}
+.pane-picture{
+ -fx-background-image: url("../images/doublexposure.jpeg");
+	-fx-background-size: cover;
+	
+	}
+
+.pane-transparent {
+  -fx-background-color: transparent;
+}
+
+.jfx-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #cccccc;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity"
+  minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0"
+  styleClass="transparent-background" xmlns="http://javafx.com/javafx/8.0.171"
+  fx:controller="g6.gcm.client.boundary.startup.MainUIController">
+    <children>
+      <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+        AnchorPane.topAnchor="0.0" maxHeight="1.7976931348623157E308"
+        maxWidth="1.7976931348623157E308" prefHeight="800.0" prefWidth="1400.0"/>
+      <JFXDrawer AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+        AnchorPane.topAnchor="0.0" defaultDrawerSize="250.0" direction="RIGHT" maxHeight="800.0"
+        maxWidth="250.0" minHeight="800.0" minWidth="250.0" prefHeight="800.0" prefWidth="250.0"
+        styleClass="transparent-background" fx:id="sidePaneDRAWER"/>
+      <AnchorPane AnchorPane.rightAnchor="0.0" prefHeight="800.0" prefWidth="1150.0"
+        fx:id="mainAP"/>
+      <VBox AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" alignment="CENTER"
+        maxHeight="100.0" minHeight="100.0" prefHeight="100.0">
+        <children>
+          <FontAwesomeIconView VBox.vgrow="NEVER" boundsType="VISUAL" fill="WHITESMOKE"
+            glyphName="BELL" size="60" styleClass="bell-icon" wrappingWidth="43.0"
+            fx:id="notificationsBTN"/>
+        </children>
+      </VBox>
+      <HBox AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" alignment="CENTER"
+        prefHeight="50.0" styleClass="white-background">
+            <children>
+                <JFXButton fx:id="minimizeBTN" contentDisplay="GRAPHIC_ONLY" ripplerFill="#fb74bb">
+                    <graphic>
+                      <FontAwesomeIconView glyphName="MINUS" size="60"/>
+                    </graphic>
+                    <padding>
+                      <Insets left="10.0" right="5.0" top="8.0"/>
+                    </padding>
+                </JFXButton>
+              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="132.0" layoutY="23.0"
+                ripplerFill="#fb74bb" fx:id="exitBTN">
+                    <graphic>
+                      <FontAwesomeIconView glyphName="CLOSE" size="60"/>
+                    </graphic>
+                </JFXButton>
+            </children>
+            <effect>
+              <InnerShadow/>
+            </effect>
+            <padding>
+              <Insets left="2.0" right="2.0"/>
+            </padding>
+        </HBox>
+      <JFXHamburger scaleX="1.5" scaleY="1.5" translateX="270.0" translateY="37.0"
+        fx:id="menuToggleBTN"/>
+      <VBox AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0" maxHeight="400.0"
+        maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" styleClass="transparent-background"
+        visible="false" fx:id="notificationsVB">
+        <children>
+          <AnchorPane VBox.vgrow="ALWAYS">
+            <children>
+              <OctIconView AnchorPane.rightAnchor="26.20001220703125" AnchorPane.topAnchor="0.0"
+                boundsType="VISUAL" fill="WHITESMOKE" glyphName="TRIANGLE_UP"
+                layoutX="261.29998779296875" size="30"/>
+            </children>
+            <VBox.margin>
+              <Insets/>
+            </VBox.margin>
+            <padding>
+              <Insets bottom="-5.0"/>
+            </padding>
+          </AnchorPane>
+          <VBox alignment="TOP_CENTER" maxHeight="400.0" minHeight="300.0" minWidth="-Infinity"
+            prefWidth="300.0" styleClass="notifications-vbox">
+            <children>
+              <HBox VBox.vgrow="ALWAYS" alignment="CENTER" maxHeight="30.0"
+                styleClass="notifications-title">
+                <children>
+                  <Label HBox.hgrow="ALWAYS" styleClass="label-18" text="Notifications"
+                    textAlignment="CENTER" wrapText="true"/>
+                </children>
+                <VBox.margin>
+                  <Insets/>
+                </VBox.margin>
+                <padding>
+                  <Insets bottom="10.0" top="10.0"/>
+                </padding>
+              </HBox>
+              <ScrollPane VBox.vgrow="ALWAYS" fitToWidth="true" hbarPolicy="NEVER" pannable="true"
+                styleClass="notifications-scroll-pane">
+                <content>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                    fx:id="notificationsListVB">
+                    <opaqueInsets>
+                      <Insets/>
+                    </opaqueInsets>
+                  </VBox>
+                </content>
+                <VBox.margin>
+                  <Insets/>
+                </VBox.margin>
+              </ScrollPane>
+              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="30.0">
+                <children>
+                  <Label HBox.hgrow="ALWAYS" text="x new notifications" textAlignment="CENTER"
+                    wrapText="true" fx:id="newNotificationsLBL">
+                    <styleClass>
+                      <String fx:value="label-14"/>
+                      <String fx:value="label-light"/>
+                    </styleClass>
+                  </Label>
+                </children>
+                <padding>
+                  <Insets bottom="10.0" top="10.0"/>
+                </padding>
+              </HBox>
+            </children>
+          </VBox>
+        </children>
+      </VBox>
+      <VBox AnchorPane.rightAnchor="209.0" AnchorPane.topAnchor="2.0" alignment="CENTER"
+        layoutX="254.0" layoutY="10.0" maxHeight="100.0" minHeight="100.0" prefHeight="100.0">
+        <children>
+          <FontAwesomeIconView VBox.vgrow="NEVER" boundsType="VISUAL" fill="WHITESMOKE"
+            glyphName="BELL" size="60" styleClass="bell-icon" wrappingWidth="43.0"
+            fx:id="notificationsBTN"/>
+        </children>
+      </VBox>
+    </children>
+    <stylesheets>
+      <URL value="@../css/BackGrounds-StyleSheet.css"/>
+      <URL value="@../css/Buttons-StyleSheet.css"/>
+      <URL value="@../css/Labels-StyleSheet.css"/>
+      <URL value="@../css/TextFields-StyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,41 @@
+.white-pane{
+	-fx-background-color:  white;
+}
+
+.combo-box .combo-box {
+	-fx-background-color: linear-gradient(to right, #4D3974, #3A5C81);
+	-fx-background-radius: 5px;
+	 -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.jfx-button {
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #B0C9FF 0%, rgba(250, 250, 250, 0.2) 100%),
+        rgba(250, 250, 250, 0.05),
+        rgba(250, 250, 250, 0.1),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.3));
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+.jfx-button:hover{
+	    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #B0C9FF 0%, rgba(250, 250, 250, 0.3) 100%),
+        rgba(250, 250, 250, 0.3),
+        rgba(250, 250, 250, 0.2),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.2));
+}
+
+.linear-background{
+	-fx-background-radius: 15px;
+	-fx-background-color: linear-gradient(to top right, #262331, #4D3974);
+	-fx-effect: innershadow( gaussian, #3A5C81, 5, 5, 10, 5);
+}
+
+.jfx-text-field .input-line{
+	-fx-pref-height: 3px;
+}

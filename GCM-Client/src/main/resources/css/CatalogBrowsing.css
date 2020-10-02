@@ -1,0 +1,156 @@
+
+.white-background {
+	-fx-background-color: whitesmoke;
+}
+
+.red-pane{
+	-fx-background-color:  red;
+}
+
+
+.top-pane{
+         -fx-background-image: url("../images/TopPane.png");
+}
+
+.transparent {
+	-fx-background-color: transparent;
+}
+.rounded-background {
+	-fx-background-radius: 70px;
+	/*-fx-background-color: linear-gradient(to top right, #262331, #4D3974);*/
+	-fx-background-color: linear-gradient(to top right,#4379A8 40%,#7D5EBF 100%,#4B3873 );
+	
+	/* -fx-effect: innershadow( gaussian, #3A5C81, 10, 5, 10, 5);*/
+}
+
+.rounded-background2 {
+	-fx-background-radius: 70px;
+	/*-fx-background-color: linear-gradient(to top right, #262331, #4D3974);*/
+	-fx-background-color: linear-gradient(to top right,#4379A8,#7D5EBF 60%,#674A99);
+	
+	/* -fx-effect: innershadow( gaussian, #3A5C81, 10, 5, 10, 5);*/
+}
+
+.rounded-background3 {
+	-fx-background-radius: 70px;
+	/*-fx-background-color: linear-gradient(to top right, #262331, #4D3974);*/
+	-fx-background-color: linear-gradient(to top right,#4379A8,#7D5EBF 20%,#674A99 80% );
+	
+	/* -fx-effect: innershadow( gaussian, #3A5C81, 10, 5, 10, 5);*/
+}
+
+.rounded-background .text{
+	-fx-text-fill: white;
+}
+
+.scroll-pane{
+	-fx-background-color: transparent;
+	}
+
+.scroll-pane .scroll-bar:vertical{
+	
+}
+.scroll-pane .scroll-bar:vertical .decrement-button {
+	-fx-background-radius:2px;
+	/*-fx-background-image: url(../images/drop-up-arrow.png)*/ 
+	-fx-background-color: #4D3974;
+}
+
+.scroll-pane .scroll-bar:vertical{
+	-fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-button .decrement-arrow{
+		-fx-background-color: #3A5C81;
+		-fx-background-image: url(../images/drop-up-arrow.png);
+}
+
+.scroll-pane .scroll-bar:vertical .thumb{
+		-fx-background-color: linear-gradient(to top right, #3A5C81, #4D3974);
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button {
+	-fx-background-radius:2px;
+	/*-fx-background-image: url(../images/drop-up-arrow.png)*/ 
+	-fx-background-color: #4D3974;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button .decrement-arrow{
+		-fx-background-color: #3A5C81;
+}
+
+
+
+
+.jfx-button {
+   	/*-fx-background-color:rgba(250, 250, 250, 0.2);
+	-fx-alignment: center;
+	-fx-textToBeRendered-fill: whitesmoke;
+	-fx-font-family: "Eras Bold ITC";
+    -fx-font-size: 20 px;*/
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, rgba(250, 250, 250, 0.1) 0%, rgba(250, 250, 250, 0.2) 100%),
+        rgba(250, 250, 250, 0.05),
+        rgba(250, 250, 250, 0.1),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.3));
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+.jfx-button:hover {
+   /*-fx-background-color:rgba(250, 250, 250, 0.5);
+    -fx-textToBeRendered-fill: black;*/
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, rgba(250, 250, 250, 0.3) 0%, rgba(250, 250, 250, 0.3) 100%),
+        rgba(250, 250, 250, 0.3),
+        rgba(250, 250, 250, 0.2),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.2));
+}
+
+.jfx-button:focused {
+    /*-fx-background-color: #5F75DE;
+    -fx-effect: innershadow(gaussian, #342851, 14.5, 0, 0, 0);*/
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, rgba(250, 250, 250, 0.3) 0%, rgba(250, 250, 250, 0.3) 100%),
+        rgba(250, 250, 250, 0.3),
+        rgba(250, 250, 250, 0.2),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.2));
+    -fx-padding: 10 15 10 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.jfx-button .text {
+    -fx-fill: whitesmoke;
+    -fx-effect: dropshadow( gaussian , black , 0,0,0,2 );
+	-fx-font-family: "Eras Demi ITC";
+}
+
+
+.jfx-button .text:focused {
+   -fx-fill: black;
+    -fx-effect: dropshadow( gaussian , black , 0,0,0,2 );
+}
+
+.jfx-button .text:hover {
+   -fx-fill: black;
+    -fx-effect: dropshadow( gaussian , black , 0,0,0,2 );
+}
+
+.label{
+	-fx-font-family: "Eras Demi ITC";
+}
+
+.jfx-radio-button{
+		-fx-font-family: "Eras Demi ITC";
+	
+}
+
+.jfx-combo-box{
+		-fx-font-family: "Eras Demi ITC";
+	
+}
+

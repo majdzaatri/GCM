@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1150.0"
+  xmlns="http://javafx.com/javafx/8.0.171"
+  fx:controller="g6.gcm.client.boundary.employee.EmployeeRequestsViewerUIController"
+  fx:id="mainViewAP">
+   <children>
+      <BorderPane prefHeight="100.0" prefWidth="1150.0" styleClass="top-pane">
+         <center>
+            <Label text="My Requests" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Eras Demi ITC" size="45.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <VBox minHeight="110.0" prefWidth="1150.0" spacing="20.0" AnchorPane.bottomAnchor="590.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Filter By:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXRadioButton fx:id="cityRB" text=" ">
+                     <graphic>
+                        <JFXComboBox fx:id="cityCB" labelFloat="true" promptText="City" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="poiRB" text=" ">
+                     <graphic>
+                        <JFXComboBox fx:id="poiCB" labelFloat="true" promptText="Point of Interest" />
+                     </graphic>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefWidth="1150.0">
+               <children>
+                  <Label text="Sort By:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXRadioButton fx:id="sortByCityRB" text="City" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="sortByExpirationDateRB" layoutX="87.0" layoutY="76.0" text="Request Date">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="sortByNumberOfTourRB" layoutX="149.0" layoutY="76.0" text="Status">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </JFXRadioButton>
+                  <Region maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="1150.0" AnchorPane.topAnchor="210.0" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="840.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0">
+         <content>
+            <VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0">
+               <children>
+                  <HBox maxHeight="-Infinity" prefHeight="170.0" prefWidth="200.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="170.0" prefWidth="1150.0">
+                           <children>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="800.0" styleClass="rounded-background">
+                                 <children>
+                                    <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="179.0" styleClass="label30" text="##/##/####" />
+                                    <Region prefHeight="52.0" prefWidth="34.0" />
+                                    <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="150.0" styleClass="label30" text="City Name" />
+                                    <Region maxWidth="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                                    <Label prefHeight="52.0" prefWidth="105.0" styleClass="label30" text="Map ID" />
+                                    <Region maxHeight="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                                    <Label prefHeight="52.0" prefWidth="117.0" styleClass="label30" text="Pending" />
+                                    <Region prefHeight="52.0" prefWidth="93.0" />
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="1.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../images/plus.png" />
+                                       </image>
+                                       <effect>
+                                          <Glow level="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="167.0" prefWidth="700.0" styleClass="linear-background-corner">
+                                 <children>
+                                    <Region prefHeight="119.0" prefWidth="27.0" />
+                                    <Label prefHeight="90.0" prefWidth="333.0" styleClass="label30" text="Comment" />
+                                    <Region prefHeight="119.0" prefWidth="155.0" />
+                                    <JFXButton text="Delete Request" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="800.0" styleClass="rounded-background2">
+                     <children>
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="179.0" styleClass="label30" text="##/##/####" />
+                        <Region prefHeight="52.0" prefWidth="34.0" />
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="150.0" styleClass="label30" text="City Name" />
+                        <Region maxWidth="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="105.0" styleClass="label30" text="Map ID" />
+                        <Region maxHeight="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="117.0" styleClass="label30" text="Pending" />
+                        <Region prefHeight="52.0" prefWidth="93.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/plus.png" />
+                           </image>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="5.0" top="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="800.0" styleClass="rounded-background3">
+                     <children>
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="179.0" styleClass="label30" text="##/##/####" />
+                        <Region prefHeight="52.0" prefWidth="34.0" />
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="150.0" styleClass="label30" text="City Name" />
+                        <Region maxWidth="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="105.0" styleClass="label30" text="Map ID" />
+                        <Region maxHeight="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="117.0" styleClass="label30" text="Pending" />
+                        <Region prefHeight="52.0" prefWidth="93.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/plus.png" />
+                           </image>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="5.0" top="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="800.0">
+                     <children>
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="179.0" styleClass="label30" text="##/##/####" />
+                        <Region prefHeight="52.0" prefWidth="34.0" />
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="150.0" styleClass="label30" text="City Name" />
+                        <Region maxWidth="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="105.0" styleClass="label30" text="Map ID" />
+                        <Region maxHeight="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="117.0" styleClass="label30" text="Pending" />
+                        <Region prefHeight="52.0" prefWidth="93.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/plus.png" />
+                           </image>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="5.0" top="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="linear-background" />
+                        <String fx:value="rounded-background4" />
+                     </styleClass>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="404.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="800.0" styleClass="rounded-background5">
+                     <children>
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="179.0" styleClass="label30" text="##/##/####" />
+                        <Region prefHeight="52.0" prefWidth="34.0" />
+                        <Label maxHeight="-Infinity" prefHeight="52.0" prefWidth="150.0" styleClass="label30" text="City Name" />
+                        <Region maxWidth="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="105.0" styleClass="label30" text="Map ID" />
+                        <Region maxHeight="-Infinity" prefHeight="52.0" prefWidth="34.0" />
+                        <Label prefHeight="52.0" prefWidth="117.0" styleClass="label30" text="Pending" />
+                        <Region prefHeight="52.0" prefWidth="93.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/plus.png" />
+                           </image>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="5.0" top="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/CityView.css" />
+     <URL value="@../../css/EmployeeMyRequests.css"/>
+   </stylesheets>
+</AnchorPane>

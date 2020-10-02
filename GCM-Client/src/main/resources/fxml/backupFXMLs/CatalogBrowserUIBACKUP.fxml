@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1150.0"
+            styleClass="white-background" stylesheets="@../../css/CatalogBrowsing.css"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="g6.gcm.client.boundary.startup.CatalogBrowserUIController" fx:id="mainViewAP">
+    <children>
+        <BorderPane prefHeight="100.0" prefWidth="1150.0" styleClass="top-pane">
+            <center>
+                <Label BorderPane.alignment="CENTER" text="GCM Catalog" textFill="WHITE">
+                    <font>
+                        <Font name="Eras Demi ITC" size="45.0"/>
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <HBox AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="100.0" alignment="CENTER_LEFT" prefWidth="1150.0">
+            <children>
+                <VBox HBox.hgrow="ALWAYS" maxWidth="555.0" prefWidth="529.0" spacing="11.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <JFXRadioButton HBox.hgrow="NEVER" text="Search By City:" fx:id="cityRB">
+                                    <HBox.margin>
+                                        <Insets right="10.0"/>
+                                    </HBox.margin>
+                                </JFXRadioButton>
+                                <CustomTextField HBox.hgrow="NEVER" prefWidth="150.0" fx:id="cityTF"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <JFXRadioButton HBox.hgrow="NEVER" text="Search By Points Of Interest:"
+                                                fx:id="poiRB">
+                                    <HBox.margin>
+                                        <Insets right="10.0"/>
+                                    </HBox.margin>
+                                </JFXRadioButton>
+                                <CustomTextField HBox.hgrow="NEVER" maxWidth="150.0" minWidth="150.0"
+                                                 prefWidth="150.0" fx:id="poiTF"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <JFXRadioButton HBox.hgrow="NEVER" text="Search By Description:"
+                                                fx:id="descriptionRB">
+                                    <HBox.margin>
+                                        <Insets right="10.0"/>
+                                    </HBox.margin>
+                                </JFXRadioButton>
+                                <CustomTextField HBox.hgrow="NEVER" maxWidth="1.7976931348623157E308"
+                                                 fx:id="descriptionTF"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308" prefWidth="200.0"/>
+                <Label text="Sort By:">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Label>
+                <JFXComboBox HBox.hgrow="NEVER" labelFloat="true" promptText="select a category"
+                             fx:id="sortingCB"/>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+        </HBox>
+        <Separator AnchorPane.bottomAnchor="548.0" prefWidth="1150.0"/>
+        <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0" hbarPolicy="NEVER" layoutX="10.0"
+                    layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                    minWidth="-Infinity" prefHeight="550.0" prefWidth="1150.0" vbarPolicy="ALWAYS">
+            <content>
+                <GridPane alignment="CENTER" hgap="30.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                          minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1149.0"
+                          vgap="30.0" fx:id="GridPane">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                           minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                           minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                           minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="337.0" minHeight="245.0" percentHeight="100.0"
+                                        prefHeight="318.0" valignment="CENTER" vgrow="ALWAYS"/>
+                        <RowConstraints maxHeight="-Infinity" minHeight="0.0" percentHeight="0.0"
+                                        prefHeight="0.0" valignment="CENTER" vgrow="ALWAYS"/>
+                    </rowConstraints>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="35.0" top="20.0"/>
+                    </padding>
+                    <children>
+                        <Pane GridPane.columnIndex="1" prefHeight="200.0" prefWidth="200.0"
+                              styleClass="rounded-background2" fx:id="CityName2">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" layoutY="81.0" prefHeight="374.0" prefWidth="345.0"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets left="35.0" right="35.0" top="35.0"/>
+                                    </padding>
+                                    <children>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label
+                                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                                textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="NEVER" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="Extend Subscription" textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" layoutX="20.0" layoutY="264.0" spacing="10.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="Download" textFill="WHITE" wrapText="true"/>
+                                                <JFXButton layoutX="10.0" layoutY="10.0"
+                                                           maxWidth="1.7976931348623157E308" text="View"
+                                                           textFill="WHITE"
+                                                           wrapText="true" fx:id="viewMapBTN"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Label alignment="CENTER" layoutX="97.0" layoutY="25.0" text="City Name"
+                                       textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font size="33.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <effect>
+                                <DropShadow offsetX="-2.0" offsetY="4.0"/>
+                            </effect>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="rounded-background"
+                              fx:id="CityName1">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" layoutY="81.0" prefHeight="374.0" prefWidth="345.0"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets left="35.0" right="35.0" top="35.0"/>
+                                    </padding>
+                                    <children>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label
+                                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                                textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="NEVER" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="Subscribe" textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" layoutX="20.0" layoutY="264.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="One Shot Deal" textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Label alignment="CENTER" layoutX="97.0" layoutY="25.0" text="City Name"
+                                       textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font size="33.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <effect>
+                                <DropShadow offsetX="-2.0" offsetY="4.0"/>
+                            </effect>
+                        </Pane>
+                        <Pane GridPane.columnIndex="2" prefHeight="200.0" prefWidth="200.0"
+                              styleClass="rounded-background3">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" layoutY="81.0" prefHeight="374.0" prefWidth="345.0"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets left="35.0" right="35.0" top="35.0"/>
+                                    </padding>
+                                    <children>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label
+                                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                                textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="NEVER" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="Subscribe" textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" layoutX="20.0" layoutY="264.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                                           text="One Shot Deal" textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Label alignment="CENTER" layoutX="97.0" layoutY="25.0" text="City Name"
+                                       textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font size="33.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <effect>
+                                <DropShadow offsetX="-2.0" offsetY="4.0"/>
+                            </effect>
+                        </Pane>
+                    </children>
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

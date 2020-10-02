@@ -1,0 +1,205 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+.left-welcome-screen{
+	-fx-background-color: transparent;
+	-fx-background-radius: 15 0 0 15;
+}
+
+.right-welcome-screen{
+	-fx-background-color: linear-gradient(to right, #4D3974, #3A5C81);
+	-fx-background-color: linear-gradient(to top right, #262331, #4D3974);
+	-fx-background-radius: 0 15 15 0;
+}
+
+.red-pane{
+	-fx-background-color:  red;
+}
+
+.left-side-button{
+	-fx-background-color: linear-gradient(to left, #5D85AD, #4D3974);
+	-fx-alignment: center;
+	-fx-text-fill: #C2C4D1;
+	-fx-font-family: "Eras Bold ITC";
+    -fx-font-size: 15 px;
+}
+
+
+.left-side-button:hover {
+	-fx-background-color: linear-gradient(to left, #4D3974, #5D85AD);
+	-fx-text-fill: #C2C4D1;
+}
+
+/* .signin-button{
+	-fx-textToBeRendered-fill:#C2C4D1 ;
+	-fx-background-color: linear-gradient(to top right, #4D3974, #262331);
+	-fx-font-size: 20;
+}
+
+.signin-button:hover{
+	-fx-background-color: linear-gradient(to top right, #262331, #4D3974);
+}*/
+
+.signin-button{
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #B0C9FF 0%, rgba(250, 250, 250, 0.2) 100%),
+        rgba(250, 250, 250, 0.05),
+        rgba(250, 250, 250, 0.1),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.3));
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}
+
+.signin-button:hover{
+	    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #B0C9FF 0%, rgba(250, 250, 250, 0.3) 100%),
+        rgba(250, 250, 250, 0.3),
+        rgba(250, 250, 250, 0.2),
+        radial-gradient(center 50% 50%, radius 100%, rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.2));
+}
+
+.transparent{
+	-fx-background-color: transparent;
+}
+
+.text-size-50{
+	-fx-text-fill: #C3D2FB;
+	-fx-font-size: 50;
+}
+
+.text-size-30{
+	-fx-text-fill: #C3D2FB;
+	-fx-font-size: 30;
+	-fx-prompt-text-fill: #BFCEFF;
+}
+
+.text-size-15{
+	-fx-text-fill: #C2C4D1;
+	-fx-font-size: 15;
+	-fx-prompt-text-fill: #BFCEFF;
+}
+
+ .date-picker{
+	-fx-font-size: 15;
+}
+
+.date-picker .text-field{
+	-fx-text-fill: #C2C4D1;
+	-fx-prompt-text-fill: #BFCEFF;
+}
+
+
+.service-buttons{
+    -fx-font-size: 15 px;
+}
+
+.menu{
+	-fx-background-color: linear-gradient(to top left, #BFCEFF, #5187B3);
+		-fx-background-color:white;
+	-fx-background-radius:15 0 0 15;
+}
+
+.logo-background{
+	-fx-background-color: rgba(250, 250, 250, 0.8);
+}
+
+.welcome{
+    -fx-effect: innershadow( gaussian, black, 3, 0, -6, 0);
+}
+
+.main-scene-background{
+	 -fx-background-image: url("../images/GCMBackgroundMenuRoundedEdges.png");
+	 -fx-background-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+/*pop-up */
+.date-picker-popup {
+    -fx-padding: 1;
+    -fx-background-color: white;
+    -fx-background-radius:50px;
+}
+
+/*Date Background Color*/
+.date-picker-popup > .month-year-pane {
+    -fx-padding: 4;
+    -fx-background-color: linear-gradient(to top right, #262331, #4D3974);
+}
+
+/*year */
+
+.date-picker-popup > .month-year-pane > .spinner {
+    -fx-spacing: 4;
+    -fx-alignment: CENTER;
+    -fx-fill-height: false;
+}
+
+
+/*
+ * 			Date Text
+	 
+  .date-picker-popup > .month-year-pane > .spinner > .spinner-label {
+    -fx-font-size: 1.083333em;
+    -fx-alignment: CENTER;
+    -fx-textToBeRendered-fill: linear-gradient(to top right, #262331, #4D3974);
+    -fx-font-weight: bold;
+}
+*/
+
+
+
+
+date-picker-popup > * > .previous-month,
+.date-picker-popup > * > .next-month { 
+    -fx-text-fill: #aaaaaa;
+}
+
+
+
+
+.choice-box .text
+{
+  -fx-fill: #C2C4D1;
+  -fx-min-width: 128;
+  -fx-min-height: 48;
+
+ }
+
+.combo-box-popup .list-view
+ {
+   -fx-background-color: transparent;
+   -fx-background-insets: 0, 1;
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+ }
+.combo-box-popup .list-view .list-cell
+ {
+-fx-background-color: linear-gradient(to top right, #AC2CEC, #667EF4);
+-fx-text-fill: white;
+-fx-font-family: "Eras Bold ITC";
+-fx-background-radius: 15px;
+	-fx-alignment: center;
+ }
+
+.jfx-combo-box .indexed-cell {
+    -fx-text-fill: white;
+    -fx-font-family: "Eras Bold ITC";
+}
+ 
+
+ .jfx-drawer .jfx-drawer-side-pane{
+ 		-fx-background-color: linear-gradient(to right, #4D3974, #3A5C81);
+	-fx-background-color: linear-gradient(to top right, #262331, #4D3974);
+	-fx-background-radius: 0 15 15 0;
+ }

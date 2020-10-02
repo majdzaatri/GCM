@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="signUp2VB" alignment="CENTER_LEFT" maxHeight="-Infinity"
+      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="440.0"
+      styleClass="sign-in-form-background" xmlns="http://javafx.com/javafx/8.0.171"
+      fx:controller="g6.gcm.client.boundary.startup.SignUp2Controller">
+  <children>
+    <Label maxHeight="-Infinity" maxWidth="-Infinity" text="Sign Up">
+      <VBox.margin>
+          <Insets/>
+      </VBox.margin>
+      <styleClass>
+          <String fx:value="label-45"/>
+          <String fx:value="colored-label-white"/>
+      </styleClass>
+    </Label>
+      <Region layoutX="40.0" layoutY="370.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0"/>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="403.0" spacing="20.0">
+          <children>
+              <HBox fx:id="firstNameHB" alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="170.0"
+                    styleClass="hbox-sign-in-form" HBox.hgrow="ALWAYS">
+                  <children>
+                      <JFXTextField fx:id="firstNameTF" focusColor="#fa65b3" labelFloat="true"
+                                    maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                    prefHeight="38.0" prefWidth="160.0" promptText="First Name" unFocusColor="#a6a6a6"
+                                    HBox.hgrow="ALWAYS">
+                          <styleClass>
+                              <String fx:value="transparent"/>
+                              <String fx:value="text-field-size-20"/>
+                              <String fx:value="jfx-text-field-white-text"/>
+                          </styleClass>
+                      </JFXTextField>
+                      <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../images/icons8-name-tag-64.png"/>
+                          </image>
+                      </ImageView>
+                  </children>
+                  <opaqueInsets>
+                      <Insets/>
+                  </opaqueInsets>
+              </HBox>
+              <HBox fx:id="lastNameHB" alignment="CENTER_LEFT" prefWidth="170.0" styleClass="hbox-sign-in-form"
+                    HBox.hgrow="ALWAYS">
+                  <children>
+                      <JFXTextField fx:id="lastNameTF" focusColor="#fa65b3" labelFloat="true"
+                                    maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                    prefHeight="38.0" prefWidth="160.0" promptText="Last Name" unFocusColor="#a6a6a6"
+                                    HBox.hgrow="ALWAYS">
+                          <styleClass>
+                              <String fx:value="transparent"/>
+                              <String fx:value="text-field-size-20"/>
+                              <String fx:value="jfx-text-field-white-text"/>
+                          </styleClass>
+                      </JFXTextField>
+                      <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../images/icons8-name-tag-64.png"/>
+                          </image>
+                      </ImageView>
+                  </children>
+                  <opaqueInsets>
+                      <Insets/>
+                  </opaqueInsets>
+              </HBox>
+          </children>
+      </HBox>
+      <Region maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="60.0"/>
+      <HBox fx:id="usernameHB" alignment="CENTER_LEFT" styleClass="hbox-sign-in-form">
+      <children>
+          <JFXTextField fx:id="usernameTF" focusColor="#fa65b3" labelFloat="true" prefHeight="31.0" prefWidth="352.0"
+                        promptText="User Name" unFocusColor="#a6a6a6">
+              <styleClass>
+                  <String fx:value="transparent"/>
+                  <String fx:value="text-field-size-20"/>
+                  <String fx:value="jfx-text-field-white-text"/>
+              </styleClass>
+          </JFXTextField>
+        <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@../images/username.png"/>
+          </image>
+        </ImageView>
+      </children>
+      <opaqueInsets>
+          <Insets/>
+      </opaqueInsets>
+    </HBox>
+      <Region maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="60.0"/>
+    <HBox>
+      <children>
+          <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+                styleClass="hbox-sign-in-form" HBox.hgrow="ALWAYS">
+          <children>
+              <JFXComboBox fx:id="phoneNumberPrefixCB" focusColor="#fa65b3" labelFloat="true"
+                           maxHeight="1.7976931348623157E308" promptText="###" unFocusColor="#a6a6a6"
+                           HBox.hgrow="ALWAYS">
+              <styleClass>
+                  <String fx:value="text-field-size-20"/>
+                  <String fx:value="jfx-combo-box-white-text"/>
+                  <String fx:value="jfx-combo-box"/>
+              </styleClass>
+            </JFXComboBox>
+          </children>
+        </HBox>
+          <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="60.0" text="-"
+                 textAlignment="CENTER" textFill="#fa65b3" HBox.hgrow="ALWAYS">
+          <font>
+              <Font name="System Bold" size="20.0"/>
+          </font>
+        </Label>
+          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity"
+                prefHeight="45.0" prefWidth="200.0" styleClass="hbox-sign-in-form" HBox.hgrow="ALWAYS">
+          <children>
+              <JFXTextField fx:id="phoneNumberTF" focusColor="#fa65b3" labelFloat="true"
+                            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                            promptText="Phone Number" unFocusColor="#a6a6a6" HBox.hgrow="ALWAYS">
+              <styleClass>
+                  <String fx:value="text-field-size-20"/>
+                  <String fx:value="jfx-text-field-white-text"/>
+              </styleClass>
+            </JFXTextField>
+            <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../images/PhoneNumber.png"/>
+              </image>
+            </ImageView>
+          </children>
+        </HBox>
+      </children>
+    </HBox>
+      <Region layoutX="40.0" layoutY="526.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0"/>
+      <HBox alignment="CENTER" layoutX="40.0" layoutY="429.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity">
+      <children>
+          <JFXButton fx:id="backToStep1BTN" maxWidth="-Infinity" prefHeight="80.0" prefWidth="160.0"
+                     ripplerFill="#9bc7fa" styleClass="sign-in-button" text="Back" HBox.hgrow="ALWAYS">
+          <font>
+              <Font name="System Bold" size="16.0"/>
+          </font>
+        </JFXButton>
+          <Region maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                  minWidth="-Infinity" prefHeight="60.0" HBox.hgrow="ALWAYS"/>
+          <JFXButton fx:id="openStep3BTN" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="80.0"
+                     prefWidth="160.0" ripplerFill="#9bc7fa" styleClass="sign-in-button" text="Next">
+          <font>
+              <Font name="System Bold" size="16.0"/>
+          </font>
+        </JFXButton>
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+      <URL value="@../css/Labels-StyleSheet.css"/>
+      <URL value="@../css/BackGrounds-StyleSheet.css"/>
+      <URL value="@../css/TextFields-StyleSheet.css"/>
+      <URL value="@../css/Buttons-StyleSheet.css"/>
+  </stylesheets>
+  <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+  </padding>
+</VBox>

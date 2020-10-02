@@ -1,0 +1,95 @@
+
+.label {
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.label-light {
+  -fx-font-family: "Eras Medium ITC";
+}
+
+
+.label-purple {
+  -fx-text-fill: #7D5EBF
+}
+
+.label-10 {
+  -fx-font-size: 10px;
+}
+
+.label-12 {
+  -fx-font-size: 12px;
+}
+
+.label-14 {
+  -fx-font-size: 14px;
+}
+
+.label-16 {
+  -fx-font-size: 16px;
+}
+
+.label-18 {
+  -fx-font-size: 18px;
+}
+
+.label-20 {
+  -fx-font-size: 20px;
+}
+
+.label-22 {
+  -fx-font-size: 22px;
+}
+
+.label-24 {
+  -fx-font-size: 24px;
+}
+
+.label-26 {
+  -fx-font-size: 26px;
+}
+
+.label-28 {
+  -fx-font-size: 28px;
+}
+
+.label-30 {
+  -fx-font-size: 30px;
+}
+
+.label-34 {
+  -fx-font-size: 34px;
+}
+
+.label-36 {
+  -fx-font-size: 36px;
+}
+
+.label-45 {
+  -fx-font-size: 45px;
+}
+
+.colored-label-white {
+  -fx-text-fill: whitesmoke;
+}
+
+.label-city-preview-title {
+  -fx-text-fill: radial-gradient(focus-angle 0deg, focus-distance -0.1%, center 0% 0%, radius 46%, repeat, #fa66b5 0%, white 40%, white);
+}
+
+.colored-label-purple {
+  -fx-text-fill: #7D5EBF;
+}
+
+
+.colored-label-blue {
+  -fx-text-fill: #4777AA;
+}
+
+.label-faded {
+  -fx-opacity: 0.6;
+}
+
+.label-faded:hover {
+  -fx-opacity: 1;
+}
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="1150.0"
+  styleClass="white-background" stylesheets="@../../css/CityView.css"
+  xmlns="http://javafx.com/javafx/8.0.171"
+  fx:controller="g6.gcm.client.boundary.fix.MapViewController">
+  <children>
+    <MapView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="225.0"
+      AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="0.0" layoutX="225.0" prefHeight="700.0"
+      prefWidth="700.0" fx:id="mapView"/>
+    <JFXButton layoutX="42.0" layoutY="328.0" stylesheets="@../../css/EmployeeMapCreation.css"
+      text="New MapLabel" fx:id="button"/>
+  </children>
+</AnchorPane>

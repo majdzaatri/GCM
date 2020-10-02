@@ -1,0 +1,44 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.white-background {
+  -fx-background-color: whitesmoke;
+}
+
+.pane{
+	-fx-background-color: transparent;
+}
+
+.main-background{
+        -fx-background-color: whitesmoke;
+         
+}
+
+.left-menu{
+	/*-fx-background-color: #323440;*/
+        /*-fx-background-color:  transparent;*/
+       -fx-background-color: linear-gradient(to top right,#4379A8,#7D5EBF 25%,#4B3873 );
+       -fx-background-image: url("../images/LeftPane.png");
+}
+
+.top-pane{
+         -fx-background-image: url("../images/TopPane.png");
+}
+
+.red-pane{
+	-fx-background-color:  red;
+}
+
+.green-pane{
+	-fx-background-color:  green;
+}
+
+
+/********************************************************/
+
+
+/*****************************************************************/
+
+
+
+
+

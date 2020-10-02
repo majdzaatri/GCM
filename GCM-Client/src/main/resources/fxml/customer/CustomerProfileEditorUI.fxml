@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainViewAP" prefHeight="800.0" prefWidth="1150.0"
+            styleClass="white-backgroung" stylesheets="@../../css/CostumerProfileEditingUI.css"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="g6.gcm.client.boundary.customer.CustomerProfileEditorUIController">
+   <children>
+      <BorderPane prefHeight="100.0" prefWidth="1150.0" styleClass="top-pane">
+         <center>
+            <Label text="Edit Profile" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Eras Demi ITC" size="45.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <VBox layoutX="5.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="660.0" prefWidth="531.0" spacing="30.0" styleClass="label20" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="589.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Edit  Personal Data" underline="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Full Name:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXTextField fx:id="FullNameTF" maxWidth="200.0" prefWidth="200.0"/>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-name-tag-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="UserName:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXTextField fx:id="UserNameTF" maxWidth="200.0" prefWidth="200.0"/>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/username.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Phone Number:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXComboBox fx:id="PhoneNumberCB" prefHeight="36.0" prefWidth="76.0"/>
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                  <Label prefHeight="26.0" prefWidth="11.0" text="-" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXTextField fx:id="PhoneNumberTF" maxWidth="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/PhoneNumber.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Separator prefHeight="13.0" prefWidth="531.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Change Password" underline="true" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Old Password:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXPasswordField fx:id="OldPasswordTF" maxWidth="300.0" prefHeight="27.0" prefWidth="200.0"/>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-password-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="New Password:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXPasswordField fx:id="NewPasswordTF" maxWidth="300.0" prefHeight="27.0" prefWidth="200.0"/>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-password-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Confirm Password:" />
+                  <Region prefHeight="50.0" prefWidth="16.0" />
+                   <JFXPasswordField fx:id="ConfirmPasswordTF" maxWidth="300.0" prefHeight="27.0" prefWidth="200.0"/>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-password-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator layoutX="554.0" layoutY="113.0" orientation="VERTICAL" prefHeight="673.0" prefWidth="20.0" AnchorPane.leftAnchor="554.0" AnchorPane.rightAnchor="576.0" />
+      <VBox layoutX="573.0" layoutY="113.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="660.0" prefWidth="531.0" spacing="30.0" styleClass="label20">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+               <children>
+                  <Label text="Edit payment method" underline="true" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox>
+               <children>
+                   <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="531.0" spacing="20.0"
+                         styleClass="credit-card-hbox">
+                     <children>
+                         <Region prefHeight="68.0" prefWidth="10.0"/>
+                         <VBox>
+                             <children>
+                                 <Label styleClass="label10-white" text="Cardholder's Name:"/>
+                                 <Region prefHeight="6.0" prefWidth="121.0"/>
+                                 <Label fx:id="CardholderNameLabel" prefHeight="26.0" prefWidth="119.0"
+                                        styleClass="label20-white"/>
+                                 <Label styleClass="label20-white"/>
+                             </children>
+                         </VBox>
+                        <VBox>
+                           <children>
+                              <Label styleClass="label10-white" text="Credit Card Num.:" />
+                              <Region prefHeight="6.0" prefWidth="121.0" />
+                               <Label fx:id="CreditCardNumberLabel" prefHeight="26.0" prefWidth="213.0"
+                                      styleClass="label20-white"/>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label styleClass="label10-white" text="Ex. Date:" />
+                              <Region prefHeight="6.0" prefWidth="121.0" />
+                               <Label fx:id="ExpirationDateLabel" prefHeight="26.0" prefWidth="138.0"
+                                      styleClass="label20-white"/>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                   <Button fx:id="DeletePaymentMethodBTN" mnemonicParsing="false" text="Delete Payment method">
+                     <VBox.margin>
+                        <Insets left="150.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="delete-button" />
+                        <String fx:value="label20-white" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="531.0">
+               <children>
+                   <JFXButton fx:id="AddPaymentMethodBTN" buttonType="RAISED" prefHeight="36.0" prefWidth="245.0"
+                              text="+ Add payment method" underline="true">
+                       <styleClass>
+                           <String fx:value="add-payment-method-button"/>
+                           <String fx:value="label20-white"/>
+                       </styleClass>
+                   </JFXButton>
+               </children>
+            </HBox>
+             <VBox fx:id="AddPaymentMethodVB" alignment="TOP_CENTER" prefHeight="271.0" prefWidth="531.0"
+                   spacing="30.0">
+                 <children>
+                     <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+                         <children>
+                             <Label text="Cardholder's Full Name:"/>
+                             <Region prefHeight="50.0" prefWidth="16.0"/>
+                             <JFXTextField fx:id="CardholderFullNameTF" maxWidth="200.0" prefWidth="200.0"/>
+                             <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true"
+                                        styleClass="username-image">
+                                 <image>
+                                     <Image url="@../../images/icons8-name-tag-64.png"/>
+                                 </image>
+                             </ImageView>
+                         </children>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+                         <children>
+                             <Label text="Cardholder's ID:"/>
+                             <Region prefHeight="50.0" prefWidth="16.0"/>
+                             <JFXTextField fx:id="CardholderIdTF" maxWidth="200.0" prefWidth="200.0"/>
+                             <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                     <Image url="@../../images/CardholderID.png"/>
+                                 </image>
+                             </ImageView>
+                         </children>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+                         <children>
+                             <Label text="Credit Card's Number:"/>
+                             <Region prefHeight="50.0" prefWidth="16.0"/>
+                             <JFXTextField fx:id="CreditCardNumberTF" maxWidth="200.0" prefWidth="200.0"
+                                           promptText="Example: 1234-5678-9876"/>
+                             <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                     <Image url="@../../images/icons8-credit-card-64.png"/>
+                                 </image>
+                             </ImageView>
+                         </children>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1090.0">
+                         <children>
+                             <Label/>
+                             <Label text="Expiration Date:"/>
+                             <JFXDatePicker fx:id="ExpirationDateDP">
+                                 <defaultColor>
+                                     <LinearGradient endX="0.23076923076923073" endY="0.6778846153846154" startX="1.0">
+                                         <stops>
+                                             <Stop color="WHITE"/>
+                                             <Stop color="#255bd4" offset="0.007434944237918215"/>
+                                             <Stop color="#9f27d3" offset="1.0"/>
+                                         </stops>
+                                     </LinearGradient>
+                                 </defaultColor>
+                             </JFXDatePicker>
+                             <Region prefHeight="50.0" prefWidth="25.0"/>
+                             <Label text="CVV:"/>
+                             <JFXTextField fx:id="CvvTF" maxWidth="200.0" prefWidth="75.0" promptText="Example: 756"/>
+                             <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                     <Image url="@../../images/CVV.png"/>
+                                 </image>
+                             </ImageView>
+                         </children>
+                     </HBox>
+                 </children>
+             </VBox>
+            <HBox alignment="CENTER">
+               <children>
+                   <JFXButton fx:id="SaveBTN" prefHeight="48.0" prefWidth="596.0" stylesheets="@../../css/General.css"
+                              text="Save">
+                     <styleClass>
+                        <String fx:value="purple-button" />
+                        <String fx:value="label10-purple" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="500.0" maxWidth="300.0"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0"
+            styleClass="transparent-background" xmlns="http://javafx.com/javafx/8.0.171">
+    <children>
+        <OctIconView AnchorPane.rightAnchor="15.7" AnchorPane.topAnchor="100.0" boundsType="VISUAL"
+                     fill="WHITESMOKE" glyphName="TRIANGLE_UP" size="30"/>
+        <VBox AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" alignment="CENTER" layoutX="244.0"
+              maxHeight="100.0" minHeight="100.0" prefHeight="100.0">
+            <children>
+                <FontAwesomeIconView boundsType="VISUAL" fill="WHITESMOKE" glyphName="BELL" size="60"
+                                     styleClass="bell-icon" wrappingWidth="43.0" fx:id="bellNotificationImage"/>
+            </children>
+        </VBox>
+        <VBox AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0" alignment="TOP_CENTER"
+              layoutX="-6.0" layoutY="100.0" maxHeight="400.0" minHeight="300.0" minWidth="-Infinity"
+              prefWidth="300.0">
+            <children>
+                <HBox VBox.vgrow="ALWAYS" alignment="CENTER" maxHeight="30.0"
+                      styleClass="notifications-title">
+                    <children>
+                        <Label HBox.hgrow="ALWAYS" styleClass="label-18" text="Notifications"
+                               textAlignment="CENTER" wrapText="true"/>
+                    </children>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </padding>
+                </HBox>
+                <ScrollPane VBox.vgrow="ALWAYS" fitToWidth="true" hbarPolicy="NEVER"
+                            styleClass="notifications-scroll-pane">
+                    <content>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                            <children>
+                                <HBox VBox.vgrow="ALWAYS" alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308"
+                                      maxWidth="1.7976931348623157E308" minHeight="46.0" styleClass="notification-hbox">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f80606" glyphName="RENREN" size="15"/>
+                                        <Region HBox.hgrow="NEVER" minWidth="10.0"/>
+                                        <Label HBox.hgrow="ALWAYS"
+                                               text="Hey ?????. You have 3 days until [City's Name] bean expires."
+                                               wrapText="true" fx:id="label1InNotification"/>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets/>
+                                    </VBox.margin>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
+                                    </padding>
+                                </HBox>
+                                <Separator VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="-2.0"/>
+                                    </VBox.margin>
+                                </Separator>
+                                <HBox VBox.vgrow="ALWAYS" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0"
+                                      maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="46.0" styleClass="notification-hbox">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f80606" glyphName="RENREN" size="15"/>
+                                        <Region HBox.hgrow="NEVER" minWidth="10.0"/>
+                                        <Label HBox.hgrow="ALWAYS" text="Jerusalem was updated to version x.x."
+                                               wrapText="true" fx:id="label1InNotification2"/>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
+                                    </padding>
+                                </HBox>
+                                <Separator layoutX="10.0" layoutY="240.0">
+                                    <VBox.margin>
+                                        <Insets bottom="-2.0"/>
+                                    </VBox.margin>
+                                </Separator>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0"
+                                      maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="46.0" styleClass="notification-hbox">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f80606" glyphName="RENREN" size="15"/>
+                                        <Region HBox.hgrow="NEVER" minWidth="10.0"/>
+                                        <Label HBox.hgrow="ALWAYS"
+                                               text="Hey ?????. You have 3 days until [City's Name] bean expires."
+                                               wrapText="true" fx:id="label1InNotification1"/>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
+                                    </padding>
+                                </HBox>
+                                <Separator layoutX="10.0" layoutY="70.0">
+                                    <VBox.margin>
+                                        <Insets bottom="-2.0"/>
+                                    </VBox.margin>
+                                </Separator>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="117.0"
+                                      maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="46.0" styleClass="notification-hbox">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f80606" glyphName="RENREN" size="15"/>
+                                        <Region HBox.hgrow="NEVER" minWidth="10.0"/>
+                                        <Label HBox.hgrow="ALWAYS"
+                                               text="Hey ?????. You have 3 days until [City's Name] bean expires."
+                                               wrapText="true" fx:id="label1InNotification11"/>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
+                                    </padding>
+                                </HBox>
+                                <Separator layoutX="10.0" layoutY="177.0">
+                                    <VBox.margin>
+                                        <Insets bottom="-2.0"/>
+                                    </VBox.margin>
+                                </Separator>
+                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="180.0"
+                                      maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="46.0" styleClass="notification-hbox">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f80606" glyphName="RENREN" size="15"/>
+                                        <Region HBox.hgrow="NEVER" minWidth="10.0"/>
+                                        <Label HBox.hgrow="ALWAYS"
+                                               text="Hey ?????. You have 3 days until [City's Name] bean expires."
+                                               wrapText="true" fx:id="label1InNotification111"/>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
+                                    </padding>
+                                </HBox>
+                                <Separator layoutX="10.0" layoutY="191.0">
+                                    <VBox.margin>
+                                        <Insets bottom="-2.0"/>
+                                    </VBox.margin>
+                                </Separator>
+                            </children>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </VBox>
+                    </content>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </children>
+    <stylesheets>
+        <URL value="@../../css/BackGrounds-StyleSheet.css"/>
+        <URL value="@../../css/Labels-StyleSheet.css"/>
+        <URL value="@../../css/Buttons-StyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

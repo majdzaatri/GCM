@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1150.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="g6.gcm.client.boundary.startup.CatalogBrowserUIController">
+    <children>
+        <BorderPane AnchorPane.bottomAnchor="700.0" AnchorPane.topAnchor="0.0" prefHeight="100.0"
+                    prefWidth="1150.0" styleClass="switcheroo-top-pane">
+            <center>
+                <Label BorderPane.alignment="CENTER" styleClass="label-45" text="GCM Catalog"
+                       textFill="WHITE" fx:id="topPaneLBL">
+                    <font>
+                        <Font name="Eras Demi ITC" size="45.0"/>
+                    </font>
+                </Label>
+            </center>
+        </BorderPane>
+        <AnchorPane AnchorPane.topAnchor="100.0" styleClass="white-overlay-background">
+            <children>
+                <ScrollPane AnchorPane.topAnchor="150.0" hbarPolicy="NEVER" maxHeight="-Infinity"
+                            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0"
+                            prefWidth="1150.0" styleClass="pink-dropshadow" vbarPolicy="ALWAYS">
+                    <content>
+                        <GridPane alignment="CENTER" hgap="30.0" maxHeight="-Infinity"
+                                  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="550.0" prefWidth="1150.0" vgap="30.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                                   minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                                   minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity"
+                                                   minWidth="10.0" percentWidth="100.0" prefWidth="340.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints percentHeight="100.0" valignment="CENTER" vgrow="ALWAYS"/>
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="35.0" top="20.0"/>
+                            </padding>
+                            <children>
+                                <VBox prefHeight="374.0" prefWidth="345.0" spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="45.0" left="35.0" right="35.0" top="30.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Label styleClass="label-34" text="City Name">
+                                                    <effect>
+                                                        <Glow level="0.88"/>
+                                                    </effect>
+                                                    <textFill>
+                                                        <RadialGradient centerY="0.16666666666666652"
+                                                                        cycleMethod="REPEAT" focusAngle="-56.31"
+                                                                        focusDistance="-0.1" radius="0.463855421686747">
+                                                            <stops>
+                                                                <Stop color="#fa66b5"/>
+                                                                <Stop color="WHITE" offset="0.4318936877076412"/>
+                                                                <Stop color="WHITE" offset="1.0"/>
+                                                            </stops>
+                                                        </RadialGradient>
+                                                    </textFill>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets/>
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Region VBox.vgrow="NEVER" maxHeight="15.0" minHeight="15.0"
+                                                prefHeight="15.0"/>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" maxHeight="15.0" prefHeight="20.0"
+                                                prefWidth="200.0"/>
+                                        <Label styleClass="label-18"
+                                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                               textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" maxHeight="45.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="Extend Subscription"
+                                                           textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" layoutX="20.0"
+                                              layoutY="264.0" maxHeight="45.0" spacing="10.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="Download"
+                                                           textFill="WHITE" wrapText="true"/>
+                                                <JFXButton layoutX="10.0" layoutY="10.0"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="View"
+                                                           textFill="WHITE"
+                                                           wrapText="true" fx:id="viewCityBTN"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="label-20"/>
+                                        <String fx:value="tile-leftmost-background"/>
+                                    </styleClass>
+                                </VBox>
+                                <VBox GridPane.columnIndex="2" prefHeight="374.0" prefWidth="345.0"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="45.0" left="35.0" right="35.0" top="30.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Label styleClass="label-34" text="City Name">
+                                                    <effect>
+                                                        <Glow level="0.88"/>
+                                                    </effect>
+                                                    <textFill>
+                                                        <RadialGradient centerY="0.16666666666666652"
+                                                                        cycleMethod="REPEAT" focusAngle="-56.31"
+                                                                        focusDistance="-0.1" radius="0.463855421686747">
+                                                            <stops>
+                                                                <Stop color="#fa66b5"/>
+                                                                <Stop color="WHITE" offset="0.4318936877076412"/>
+                                                                <Stop color="WHITE" offset="1.0"/>
+                                                            </stops>
+                                                        </RadialGradient>
+                                                    </textFill>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets/>
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Region VBox.vgrow="NEVER" maxHeight="15.0" minHeight="15.0"
+                                                prefHeight="15.0"/>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" maxHeight="15.0" prefHeight="20.0"
+                                                prefWidth="200.0"/>
+                                        <Label styleClass="label-18"
+                                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                               textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" maxHeight="45.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="Subscribe"
+                                                           textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" layoutX="20.0"
+                                              layoutY="264.0" maxHeight="45.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="One Shot Deal"
+                                                           textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="label-20"/>
+                                        <String fx:value="tile-rightmost-background"/>
+                                    </styleClass>
+                                </VBox>
+                                <VBox GridPane.columnIndex="1" prefHeight="374.0" prefWidth="345.0"
+                                      spacing="10.0">
+                                    <padding>
+                                        <Insets bottom="45.0" left="35.0" right="35.0" top="30.0"/>
+                                    </padding>
+                                    <children>
+                                        <HBox alignment="TOP_CENTER">
+                                            <children>
+                                                <Label styleClass="label-34" text="City Name">
+                                                    <effect>
+                                                        <Glow level="0.88"/>
+                                                    </effect>
+                                                    <textFill>
+                                                        <RadialGradient centerY="0.16666666666666652"
+                                                                        cycleMethod="REPEAT" focusAngle="-56.31"
+                                                                        focusDistance="-0.1" radius="0.463855421686747">
+                                                            <stops>
+                                                                <Stop color="#fa66b5"/>
+                                                                <Stop color="WHITE" offset="0.4318936877076412"/>
+                                                                <Stop color="WHITE" offset="1.0"/>
+                                                            </stops>
+                                                        </RadialGradient>
+                                                    </textFill>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets/>
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Region VBox.vgrow="NEVER" maxHeight="15.0" minHeight="15.0"
+                                                prefHeight="15.0"/>
+                                        <Label text="Release date: ##/##/###" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Sites: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Label text="Number of Maps: ##" textFill="WHITE">
+                                            <font>
+                                                <Font size="20.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" maxHeight="15.0" prefHeight="20.0"
+                                                prefWidth="200.0"/>
+                                        <Label styleClass="label-18"
+                                               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae felis molestie odio dapibus dignissim sed id dolor. Donec aliquam."
+                                               textFill="WHITE" wrapText="true">
+                                            <font>
+                                                <Font size="18.0"/>
+                                            </font>
+                                        </Label>
+                                        <Region VBox.vgrow="ALWAYS" prefHeight="20.0" prefWidth="200.0"/>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" maxHeight="45.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="Subscribe"
+                                                           textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox VBox.vgrow="ALWAYS" alignment="CENTER" layoutX="20.0"
+                                              layoutY="264.0" maxHeight="45.0">
+                                            <children>
+                                                <JFXButton HBox.hgrow="ALWAYS"
+                                                           maxHeight="1.7976931348623157E308"
+                                                           maxWidth="1.7976931348623157E308"
+                                                           styleClass="bean-catalog-buttons" text="One Shot Deal"
+                                                           textFill="WHITE" wrapText="true"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="label-20"/>
+                                        <String fx:value="tile-middle-background"/>
+                                    </styleClass>
+                                </VBox>
+                            </children>
+                        </GridPane>
+                    </content>
+                    <stylesheets>
+                        <URL value="@../css/BackGrounds-StyleSheet.css"/>
+                        <URL value="@../css/Buttons-StyleSheet.css"/>
+                        <URL value="@../css/Labels-StyleSheet.css"/>
+                        <URL value="@../css/TextFields-StyleSheet.css"/>
+                    </stylesheets>
+                </ScrollPane>
+                <HBox AnchorPane.topAnchor="0.0" alignment="CENTER_LEFT" maxHeight="152.0"
+                      prefHeight="152.0" prefWidth="1150.0">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS" maxWidth="555.0" prefWidth="530.0" spacing="10.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <JFXRadioButton HBox.hgrow="NEVER" text="Search By City:"
+                                                        fx:id="cityRB">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </JFXRadioButton>
+                                        <CustomTextField HBox.hgrow="NEVER" prefWidth="150.0"
+                                                         styleClass="sign" fx:id="cityTF"/>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <JFXRadioButton HBox.hgrow="NEVER"
+                                                        text="Search By Points Of Interest:" fx:id="poiRB">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </JFXRadioButton>
+                                        <CustomTextField HBox.hgrow="NEVER" maxWidth="150.0" minWidth="150.0"
+                                                         prefWidth="150.0" fx:id="poiTF"/>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <JFXRadioButton HBox.hgrow="NEVER" text="Search By Description:"
+                                                        fx:id="descriptionRB">
+                                            <HBox.margin>
+                                                <Insets right="10.0"/>
+                                            </HBox.margin>
+                                        </JFXRadioButton>
+                                        <CustomTextField HBox.hgrow="NEVER" maxWidth="1.7976931348623157E308"
+                                                         fx:id="descriptionTF"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" maxWidth="1.7976931348623157E308" prefWidth="200.0"/>
+                        <Label styleClass="label-16" text="Sort By:">
+                            <HBox.margin>
+                                <Insets right="10.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <JFXComboBox HBox.hgrow="NEVER" labelFloat="true" promptText="select a category"
+                                     fx:id="sortingCB"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                    </padding>
+                </HBox>
+                <Separator AnchorPane.topAnchor="150.0" prefWidth="1150.0"/>
+            </children>
+        </AnchorPane>
+        <JFXDrawer AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="100.0"
+                   defaultDrawerSize="1150.0" direction="BOTTOM" disable="true" prefHeight="700.0"
+                   prefWidth="1150.0" styleClass="transparent-background" fx:id="catalogDRAWER"/>
+        <JFXButton AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="550.0" alignment="CENTER"
+                   contentDisplay="GRAPHIC_ONLY" layoutX="1097.0" layoutY="330.0"
+                   styleClass="customer-mapDTO-view-back-button" text="backBTN" visible="false"
+                   fx:id="closeBTN">
+            <padding>
+                <Insets left="2.0" right="2.0"/>
+            </padding>
+            <graphic>
+                <FontAwesomeIconView fill="WHITESMOKE" glyphName="ARROW_CIRCLE_DOWN" size="50">
+                    <effect>
+                        <DropShadow color="#4379a8" height="9.0" offsetY="2.0" radius="3.25" width="6.0"/>
+                    </effect>
+                </FontAwesomeIconView>
+            </graphic>
+        </JFXButton>
+    </children>
+    <stylesheets>
+        <URL value="@../css/BackGrounds-StyleSheet.css"/>
+        <URL value="@../css/Buttons-StyleSheet.css"/>
+        <URL value="@../css/TextFields-StyleSheet.css"/>
+        <URL value="@../css/Labels-StyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

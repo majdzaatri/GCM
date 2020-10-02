@@ -1,0 +1,177 @@
+
+.root{
+	  -fx-background-color: transparent;
+	
+}
+
+/*TODO: Clean up!!!*/
+.pane-transparent {
+  -fx-background-color: transparent;
+}
+
+.pane {
+  -fx-background-color: #333333;
+}
+
+.login-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+  -fx-border-color: #cccccc;
+  -fx-border-radius: 5px;
+  -fx-border-width: 2px;
+  -fx-text-fill: whitesmoke;
+}
+
+.white-pane {
+  -fx-background-color: white;
+}
+
+.green-text-field-border {
+  -fx-background-color: transparent;
+  -fx-border-color: #c4efa7;
+  -fx-border-width: 0px 0px 1px 0px;
+}
+
+.blue-text-field-border {
+   -fx-background-color: transparent;
+   -fx-border-color: #99bce0;
+   -fx-border-width: 0px 0px 1px 0px;
+ }
+
+.orange-text-field-border {
+  -fx-background-color: transparent;
+  -fx-border-color: #ffcf98;
+  -fx-border-width: 0px 0px 1px 0px;
+}
+
+.text-field-box {
+  -fx-background-color: transparent;
+}
+
+.green-button {
+  -fx-background-color: #3fe44f;
+  -fx-background-radius: 5px;
+  -fx-text-fill: white;
+}
+
+.blue-button{
+  -fx-background-color: #4f8dd1;
+  -fx-background-radius: 5px;
+  -fx-text-fill: white;
+}
+
+.orange-button{
+  -fx-background-color: #ffa053;
+  -fx-background-radius: 5px;
+  -fx-text-fill: white;
+}
+
+.jfx-date-picker .input-focused-line {
+  -fx-background-color: transparent;
+}
+
+.jfx-date-picker .input-line {
+  -fx-background-color: transparent;
+}
+
+.jfx-date-picker .text-field {
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+}
+
+.jfx-text-field{
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+}
+
+.jfx-password-field{
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+}
+.jfx-text-field .input-line{
+  -fx-background-color: transparent;
+}
+
+.jfx-text-field .input-focused-line{
+  -fx-background-color: transparent;
+}
+
+.jfx-password-field .input-line{
+  -fx-background-color: transparent;
+}
+
+.jfx-password-field .input-focused-line{
+  -fx-background-color: transparent;
+}
+
+
+
+
+/*TODO: delete unnecessary*/
+.jfx-combo-box {
+  -fx-background-color:  transparent;
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-text-alignment: center;
+  -fx-prompt-text-alignment: center;
+}
+
+.jfx-combo-box .input-focused-line{
+  -fx-background-color:  transparent;
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-prompt-text-alignment: center;
+  -fx-text-alignment: center;
+}
+
+.jfx-combo-box .input-line{
+  -fx-background-color:  transparent;
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-prompt-text-alignment: center;
+  -fx-text-alignment: center;
+}
+
+.jfx-combo-box .arrow{
+  -fx-background-color: #c4efa7;
+}
+
+.jfx-combo-box .label {
+  -fx-text-alignment: center;
+  -fx-text-size: 16px;
+  -fx-text-fill: #c4efa7;
+  -fx-prompt-text-alignment: center;
+}
+
+.jfx-combo-box .list-cell:empty{
+  -fx-text-alignment: center;
+  -fx-text-size: 16px;
+  -fx-text-fill: #c4efa7;
+  -fx-prompt-text-alignment: center;
+}
+
+.jfx-combo-box .list-cell:default:empty .text-field,
+.jfx-choice-box .list-cell:default:empty .text-field {
+  -fx-text-alignment: center;
+  -fx-prompt-text-alignment: center;
+}
+
+.jfx-combo-box .arrow-button {
+  -fx-text-alignment: center;
+  -fx-text-size: 16px;
+  -fx-text-fill: #c4efa7;
+  -fx-prompt-text-alignment: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

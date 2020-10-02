@@ -1,0 +1,252 @@
+
+.jfx-text-field {
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.jfx-text-area {
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16px;
+  -fx-text-fill: black;
+}
+
+
+.jfx-text-field-white-text {
+  -fx-text-fill: whitesmoke;
+}
+
+.jfx-password-field {
+  -fx-prompt-text-fill: #B2B2B2;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.text-field-size-20 {
+  -fx-font-size: 20px;
+}
+
+.jfx-text-field .input-line {
+  -fx-background-color: transparent;
+}
+
+.jfx-text-field .input-focused-line {
+  -fx-background-color: transparent;
+}
+
+.jfx-password-field .input-line {
+  -fx-background-color: transparent;
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.jfx-password-field .input-focused-line {
+  -fx-background-color: transparent;
+}
+
+.custom-text-field {
+  -fx-background-color: transparent;
+  -fx-border-width: 0 0 2 0;
+  -fx-border-color: black;
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16;
+}
+
+.custom-text-field:focused {
+  -fx-border-width: 0 0 2 0;
+  -fx-border-color: #FA65B3;
+}
+
+.jfx-combo-box {
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16px;
+  -fx-text-fill: black;
+}
+
+.jfx-combo-box .cell:selected {
+  -fx-text-fill: whitesmoke;
+}
+
+
+.jfx-radio-button {
+  -fx-text-fill: black;
+  -fx-font-size: 16px;
+  -fx-font-family: "Eras Demi ITC";
+  -fx-background-color: transparent;
+  -jfx-selected-color: #FA65B3;
+  -jfx-unselected-color: #4578A9;
+}
+
+
+.jfx-radio-button .radio-container {
+  -fx-border-color: #7657B2;
+  -fx-font-size: 20;
+  -fx-border-insets: 0;
+  -fx-border-radius: 3;
+  /*-fx-border-style: dotted;*/
+  -fx-border-width: 3;
+}
+
+.jfx-radio-button .radio-container .dot {
+  -fx-opacity: 1;
+  -fx-border-radius: 2;
+  -fx-padding: -2;
+  -fx-border-width: 3;
+  -fx-font-size: 20px;
+}
+
+
+.jfx-date-picker > .jfx-text-field {
+  -jfx-label-float: true;
+  -fx-text-fill: whitesmoke;
+  /*-jfx-focus-color: #FA65B3;*/
+  -fx-font-family: "Eras Demi ITC";
+}
+
+
+.text-field-pink-blue {
+  -fx-prompt-text-fill: #4578A9;
+  -jfx-focus-color: #FA65B3;
+  -jfx-unfocus-color: #4578A9;
+}
+
+
+.text-field-pink-blue .input-line {
+  -fx-background-color: #4578A9;
+}
+
+
+.text-field-pink-blue .input-focused-line {
+  -fx-background-color: #FA65B3;
+}
+
+
+.text-field-pink-purple {
+  -fx-prompt-text-fill: #7657B2;
+  -jfx-focus-color: #FA65B3;
+  -jfx-unfocus-color: #7657B2;
+}
+
+
+.text-field-pink-purple .input-line {
+  -fx-background-color: #7657B2;
+}
+
+
+.text-field-pink-purple .input-focused-line {
+  -fx-background-color: #FA65B3;
+}
+
+
+.text-area-pink-blue {
+  -fx-prompt-text-fill: #4578A9;
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16px;
+  -jfx-focus-color: #FA65B3;
+  -jfx-unfocus-color: #4578A9;
+}
+
+.text-area-pink-blue:focused {
+  -fx-background-color: rgba(250, 101, 179, 0.06);
+}
+
+
+.combo-box-20 {
+  -fx-font-size: 20;
+}
+
+.combo-box-pink-blue {
+  -fx-text-fill: #4578A9;
+  -fx-prompt-text-fill: #4578A9;
+  -jfx-focus-color: #FA65B3;
+  -jfx-unfocus-color: #4578A9;
+}
+
+.combo-box-pink-blue .cell:selected {
+  -fx-text-fill: Black;
+}
+
+.combo-box-pink-purple {
+  -fx-text-fill: #7657B2;
+  -fx-prompt-text-fill: #7657B2;
+  -jfx-focus-color: #FA65B3;
+  -jfx-unfocus-color: #7657B2;
+}
+
+.combo-box-pink-purple .cell:selected {
+  -fx-text-fill: Black;
+}
+
+.toggle-button-blue-text {
+  -fx-text-fill: #4578A9;
+}
+
+
+.toggle-button-map-type {
+  -fx-text-fill: toggle-button-blue-text;
+  -fx-background-color: whitesmoke;
+  -fx-font-family: "Eras Demi ITC";
+  -fx-font-size: 16;
+  -fx-text-fill: #7657B2;
+}
+
+.titled-pane {
+  -fx-font-family: "Eras Demi ITC";
+}
+
+.titled-pane-24 .title {
+  -fx-pref-height: 38.0;
+}
+
+
+.titled-pane-24 .title .text {
+  -fx-text-origin: center;
+  -fx-font-size: 24;
+}
+
+
+.list-selection-view .grid-pane .list-header-label .text {
+  -fx-fill: #4578A9;
+  -fx-font-size: 16px;
+}
+
+/*.maps-editor-text-area .input-line{*/
+/*-fx-background-color: #4578A9;*/
+/*}*/
+
+/*.maps-editor-text-area .input-focused-line{*/
+/*-fx-background-color: #FA65B3;*/
+/*}*/
+
+
+/*.maps-editor-text-fields .input-line {*/
+/*-fx-background-color: #4777AA;*/
+/*}*/
+
+/*.maps-editor-text-fields .input-focused-line {*/
+/*-fx-background-color: #FA65B3;*/
+/*}*/
+
+/*.maps-editor-text-fields{*/
+/*-fx-background-color: transparent;*/
+/*-fx-border-width: 0 0 2 0;*/
+/*-fx-border-color: #4777AA;*/
+/*-fx-font-family: "Eras Demi ITC";*/
+/*-fx-font-size: 16;*/
+/*}*/
+
+/*.custom-text-field:focused {*/
+/*-fx-border-width: 0 0 2 0;*/
+/*-fx-border-color: #FA65B3;*/
+/*}*/
+
+/*.jfx-combo-box .list-cell:filled:selected .textToBeRendered{*/
+/*    -fx-prompt-textToBeRendered-fill: whitesmoke;*/
+/*    -fx-fill: whitesmoke;*/
+/*}*/
+
+/*VALIDATOR LABELS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*.jfx-combo-box .label{*/
+/*  -fx-textToBeRendered-fill: green;*/
+/*}*/
+
+

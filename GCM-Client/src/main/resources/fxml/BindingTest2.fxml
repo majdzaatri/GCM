@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/temp2.css"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="g6.gcm.client.boundary.BindingTestController">
+  <children>
+    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="480.0" prefWidth="480.0"
+      styleClass="default-background">
+      <children>
+        <Label text="Binding Test" textFill="#448ccf">
+          <font>
+            <Font name="Eras Bold ITC" size="30.0"/>
+          </font>
+        </Label>
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="50.0" prefWidth="480.0"/>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="300.0"
+          styleClass="text-field-box">
+          <VBox.margin>
+            <Insets left="15.0" right="15.0"/>
+          </VBox.margin>
+          <children>
+            <JFXComboBox HBox.hgrow="ALWAYS" focusColor="#448ad0" labelFloat="true"
+              maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              promptText="Select Map" unFocusColor="#99bce0" fx:id="selectMapCB"/>
+          </children>
+        </HBox>
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="50.0" prefWidth="480.0"/>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="300.0">
+          <children>
+            <VBox HBox.hgrow="ALWAYS">
+              <children>
+                  <Label styleClass="mylabel" text="Currently chosen mapDTO's version is:"/>
+                <JFXTextField alignment="CENTER" focusColor="YELLOW" prefHeight="37.0"
+                  prefWidth="60.0" unFocusColor="#99bce0" fx:id="cityNameTF"/>
+              </children>
+            </VBox>
+          </children>
+          <VBox.margin>
+            <Insets left="15.0" right="15.0" top="10.0"/>
+          </VBox.margin>
+        </HBox>
+        <Region layoutX="10.0" layoutY="188.0" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="480.0"/>
+        <HBox alignment="CENTER_LEFT" layoutX="100.0" layoutY="261.0" maxHeight="-Infinity"
+          maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0"
+          prefWidth="300.0" visible="false">
+          <children>
+            <Label styleClass="mylabel" text="Version in ObjectProperty&lt;Map&gt;:">
+              <HBox.margin>
+                <Insets right="10.0"/>
+              </HBox.margin>
+            </Label>
+            <Label styleClass="my-yellow-label" underline="true" fx:id="objectPropertyVersionLBL">
+              <HBox.margin>
+                <Insets left="29.0"/>
+              </HBox.margin>
+            </Label>
+          </children>
+        </HBox>
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="30.0" prefWidth="480.0"/>
+        <Region layoutX="10.0" layoutY="378.0" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="480.0"/>
+        <HBox alignment="CENTER" layoutX="25.0" layoutY="355.0" maxHeight="-Infinity"
+          minHeight="-Infinity" prefHeight="45.0" prefWidth="200.0">
+          <children>
+            <JFXButton HBox.hgrow="ALWAYS" alignment="CENTER" contentDisplay="RIGHT"
+              graphicTextGap="14.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+              prefWidth="140.0" ripplerFill="YELLOW" styleClass="doIt-button" text="Do It"
+              textAlignment="CENTER" fx:id="doItBTN">
+              <graphic>
+                <FontAwesomeIconView fill="#99bce0" glyphName="SEND" size="20"/>
+              </graphic>
+            </JFXButton>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <JFXButton AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" alignment="CENTER"
+      contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity"
+      prefHeight="10.0" prefWidth="25.0" text=" " fx:id="closeBTN">
+      <graphic>
+        <FontAwesomeIconView fill="#b92e2e" glyphName="CLOSE" size="40" text=""
+          textAlignment="CENTER"/>
+      </graphic>
+    </JFXButton>
+    <AnchorPane AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"
+      AnchorPane.rightAnchor="1.0" layoutX="1.0" layoutY="474.0" fx:id="progressBarAP">
+      <children>
+        <JFXProgressBar AnchorPane.bottomAnchor="0.0" accessibleRole="NODE" maxHeight="-Infinity"
+          maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="8.0"
+          prefWidth="478.0"/>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
